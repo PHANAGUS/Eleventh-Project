@@ -53,7 +53,7 @@ void findV(){
     cout << "u = "; cin >> u; 
     cout << "a = "; cin >> a;
     cout << "t = "; cin >> t;
-    cout << u + a*t;
+    cout << "v = " << u + a*t;
 }
 
 void findS(){
@@ -61,7 +61,7 @@ void findS(){
     cout << "u = " ; cin >> u;
     cout << "v = " ; cin >> v;
     cout << "t = " ; cin >> t;
-    cout << (u+v)/2 * t;
+    cout << "s = " << (u+v)/2 * t;
 }
 
 void findS1(){
@@ -69,7 +69,7 @@ void findS1(){
     cout << "u = " ; cin >> u;
     cout << "t = " ; cin >> t;
     cout << "a = " ; cin >> a;
-    cout << u*t + 0.5*a*pow(t,2);
+    cout << "s = " << u*t + 0.5*a*pow(t,2);
 }
 
 void findS2(){
@@ -77,7 +77,7 @@ void findS2(){
     cout << "v = " ; cin >> v;
     cout << "t = " ; cin >> t;
     cout << "a = " ; cin >> a;
-    cout << v*t - 0.5*a*pow(t,2);
+    cout << "s = " << v*t - 0.5*a*pow(t,2);
 }
 
 void findV2(){
@@ -85,12 +85,12 @@ void findV2(){
     cout << "u = " ; cin >> u;
     cout << "a = " ; cin >> a;
     cout << "s = " ; cin >> s;
-    cout << pow(u,2) + 2*a*s;
+    cout << "v^2 = " << pow(u,2) + 2*a*s;
 }
 
 void findSS(){
     cout << "s = v*t" << '\n';
     cout << "v = " ; cin >> v;
     cout << "t = " ; cin >> t;
-    cout << v*t;
+    cout << "s = " << v*t;
 }
