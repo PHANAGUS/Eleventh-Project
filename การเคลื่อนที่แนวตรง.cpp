@@ -49,7 +49,7 @@ int main(){
 }
 
 void findV(){
-    cout << "find v(speed)" << '\n';
+    cout << "v = u+at" << '\n';
     cout << "u = "; cin >> u; 
     cout << "a = "; cin >> a;
     cout << "t = "; cin >> t;
@@ -57,7 +57,7 @@ void findV(){
 }
 
 void findS(){
-    cout << "find s(don't have a)" << '\n';
+    cout << "s = ((u+v)/2)*t" << '\n';
     cout << "u = " ; cin >> u;
     cout << "v = " ; cin >> v;
     cout << "t = " ; cin >> t;
@@ -65,7 +65,7 @@ void findS(){
 }
 
 void findS1(){
-    cout << "find s(displacement in case there is u)" << '\n';
+    cout << "s = (u*t)+(1/2)*a*t^2" << '\n';
     cout << "u = " ; cin >> u;
     cout << "t = " ; cin >> t;
     cout << "a = " ; cin >> a;
@@ -73,7 +73,7 @@ void findS1(){
 }
 
 void findS2(){
-    cout << "find s(displacement in case there is v)" << '\n';
+    cout << "s = (v*t)-(1/2)*a*t^2" << '\n';
     cout << "v = " ; cin >> v;
     cout << "t = " ; cin >> t;
     cout << "a = " ; cin >> a;
@@ -81,7 +81,7 @@ void findS2(){
 }
 
 void findV2(){
-    cout << "find v(square)" << '\n';
+    cout << "v^2 = u^2+2*a*s" << '\n';
     cout << "u = " ; cin >> u;
     cout << "a = " ; cin >> a;
     cout << "s = " ; cin >> s;
@@ -89,7 +89,7 @@ void findV2(){
 }
 
 void findSS(){
-    cout << "find s(if a = 0)" << '\n';
+    cout << "s = v*t" << '\n';
     cout << "v = " ; cin >> v;
     cout << "t = " ; cin >> t;
     cout << v*t;
