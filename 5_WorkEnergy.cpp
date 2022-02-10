@@ -24,7 +24,7 @@ double Chapter5_8(string);
 
 int main()
 {
-    int select;
+    string select;
     cout << "--------------------------------------------------" << endl;
     cout << "Find W (Work)                              Press 1" << endl;
     cout << "Find P (Power)                             Press 2" << endl;
@@ -34,141 +34,112 @@ int main()
     cout << "Find Ep (Potential Energy)                 Press 6" << endl;
     cout << "Find k (Spring's Constant)                 Press 7" << endl;
     cout << "Find x (Spring's Displacement)             Press 8" << endl;
-    for(;;)//ask for dicision.
-    {
+    do{
         cout << "Press : ";
-        cin >> select;
-        if(select == 1 || select == 2 || select == 3 || select == 4 || select == 5 || select == 6 || select == 7 || select == 8) break;
+        getline(cin,select);
+        if(select == "1" || select == "2" || select == "3" || select == "4" || select == "5" || select == "6" || select == "7" || select == "8") break;
         else cout << "***Please Press 1-8." << endl;
-    }
-    switch(select)
-    {
-        case 1: findW(); break;
-        case 2: findP(); break;
-        case 3: findF(); break;
-        case 4: findv(); break;
-        case 5: findEk(); break;
-        case 6: findEp(); break;
-        case 7: findk(); break;
-        case 8: findx(); break;
-    }
+    }while(true);
+
+    if(select == "1") findW();
+    else if(select == "2") findP();
+    else if(select == "3") findF();
+    else if(select == "4") findv();
+    else if(select == "5") findEk();
+    else if(select == "6") findEp();
+    else if(select == "7") findk();
+    else if(select == "8") findx();
 }
 
 void findW()
 {
-    int select;
+    string select;
     cout << "--------------------------------------------------" << endl;
     cout << "Find by" << endl;
     cout << "   1. F(Force) and s(Displacement)         Press 1" << endl;
     cout << "   2. P(Power) and T(Time)                 Press 2" << endl;
-    for(;;)//ask for dicision.
-    {
+    do{
         cout << "Press : ";
-        cin >> select;
-        if(select == 1 || select == 2) break;
+        getline(cin,select);
+        if(select == "1" || select == "2") break;
         else cout << "***Please Press 1-2." << endl;
-    }
+    }while(true);
     cout << "--------------------------------------------------" << endl;
-    switch(select)
-    {
-        case 1:
-            Chapter5_1("W");
-            break;
-        case 2:
-            Chapter5_2("W");
-            break;
-    }
+
+    if(select == "1") Chapter5_1("W");
+    else if(select == "2") Chapter5_2("W");
+
     cout << "#Result ----->  W = " << W  << " N.m" << endl;
     cout << "--------------------------------------------------";
 }
 void findP()
 {
-    int select;
+    string select;
     cout << "--------------------------------------------------" << endl;
     cout << "Find by" << endl;
     cout << "   1. W(Work) and T(Time)                  Press 1" << endl;
     cout << "   2. F(Force) and V(Velocity)             Press 2" << endl;
-    for(;;)//ask for dicision.
-    {
+    do{
         cout << "Press : ";
-        cin >> select;
-        if(select == 1 || select == 2) break;
+        getline(cin,select);
+        if(select == "1" || select == "2") break;
         else cout << "***Please Press 1-2." << endl;
-    }
+    }while(true);
     cout << "--------------------------------------------------" << endl;
-    switch(select)
-    {
-        case 1:
-            Chapter5_2("P");
-            break;
-        case 2:
-            Chapter5_3("P");
-            break;
-    }
+
+    if(select == "1") Chapter5_2("P");
+    else if(select == "2") Chapter5_3("P");
+
     cout << "#Result ----->  P = " << P << " W" << endl;
     cout << "--------------------------------------------------";
 }
 void findF()
 {
-    int select;
+    string select;
     cout << "--------------------------------------------------" << endl;
     cout << "Find by" << endl;
     cout << "   1. W(Work) and s(Displacement)          Press 1" << endl;
     cout << "   2. P(Power) and V(Velocity)             Press 2" << endl;
     cout << "   3. k and x (Spring's)                   Press 3" << endl;
-    for(;;)//ask for dicision.
-    {
+    do{
         cout << "Press : ";
-        cin >> select;
-        if(select == 1 || select == 2 || select == 3) break;
+        getline(cin,select);
+        if(select == "1" || select == "2" || select == "3") break;
         else cout << "***Please Press 1-3." << endl;
-    }
+    }while(true);
     cout << "--------------------------------------------------" << endl;
-    switch(select)
-    {
-        case 1:
-            Chapter5_1("F");
-            break;
-        case 2:
-            Chapter5_3("F");
-            break;
-        case 3:
-            Chapter5_8("F");
-            break;
-    }
+
+    if(select == "1") Chapter5_1("F");
+    else if(select == "2") Chapter5_3("F");
+    else if(select == "3") Chapter5_8("F");
+
     cout << "#Result ----->  F = " << F << " N" << endl;
     cout << "--------------------------------------------------";
 }
 void findv()
 {
-    int select;
+    string select;
     cout << "--------------------------------------------------" << endl;
     cout << "Find by" << endl;
     cout << "   1. P(Power) and F(Force)                Press 1" << endl;
     cout << "   2. Ek(Kinetic Energy) and m(Mass)       Press 2" << endl;
-    for(;;)//ask for dicision.
-    {
+    do{
         cout << "Press : ";
-        cin >> select;
-        if(select == 1 || select == 2) break;
+        getline(cin,select);
+        if(select == "1" || select == "2") break;
         else cout << "***Please Press 1-2." << endl;
-    }
+    }while(true);
     cout << "--------------------------------------------------" << endl;
-    switch(select)
-    {
-        case 1:
-            Chapter5_3("v");
-            break;
-        case 2:
-            Chapter5_4("v");
-            break;
-    }
+
+    if(select == "1") Chapter5_3("v");
+    else if(select == "2") Chapter5_4("v");
+
     cout << "#Result ----->  v = " << v << " m/s" << endl;
     cout << "--------------------------------------------------";
 }
 void findEk()
 {
-    int select;
+    string select;
     cout << "--------------------------------------------------" << endl;
     /*cout << "Find by" << endl;
     cout << "   1. v(Velocity) and m(Mass)              Press 1" << endl;
@@ -197,82 +168,64 @@ void findEk()
 }
 void findEp()
 {
-    int select;
+    string select;
     cout << "--------------------------------------------------" << endl;
     cout << "Find by" << endl;
     cout << "   1. m(Mass), g(9.81) and h(Height)       Press 1" << endl;
     cout << "   2. k and x (Spring's)                   Press 2" << endl;
-    for(;;)//ask for dicision.
-    {
+    do{
         cout << "Press : ";
-        cin >> select;
-        if(select == 1 || select == 2) break;
+        getline(cin,select);
+        if(select == "1" || select == "2") break;
         else cout << "***Please Press 1-2." << endl;
-    }
+    }while(true);
     cout << "--------------------------------------------------" << endl;
-    switch(select)
-    {
-        case 1:
-            Chapter5_6("Ep");
-            break;
-        case 2:
-            Chapter5_7("Ep");
-            break;
-    }
+
+    if(select == "1") Chapter5_6("Ep");
+    else if(select == "2") Chapter5_7("Ep");
+
     cout << "#Result ----->  Ep = " << Ep << " J" << endl;
     cout << "--------------------------------------------------";
 }
 void findk()
 {
-    int select;
+    string select;
     cout << "--------------------------------------------------" << endl;
     cout << "Find by" << endl;
     cout << "   1. Ep(Potential Energy) and x           Press 1" << endl;
     cout << "   2. F(Force) and x                       Press 2" << endl;
-    for(;;)//ask for dicision.
-    {
+    do{
         cout << "Press : ";
-        cin >> select;
-        if(select == 1 || select == 2) break;
+        getline(cin,select);
+        if(select == "1" || select == "2") break;
         else cout << "***Please Press 1-2." << endl;
-    }
+    }while(true);
     cout << "--------------------------------------------------" << endl;
-    switch(select)
-    {
-        case 1:
-            Chapter5_7("k");
-            break;
-        case 2:
-            Chapter5_8("k");
-            break;
-    }
+
+    if(select == "1") Chapter5_7("k");
+    else if(select == "2") Chapter5_8("k");
+
     cout << "#Result ----->  k = " << k << " N/m" << endl;
     cout << "--------------------------------------------------";
 }
 void findx()
 {
-    int select;
+    string select;
     cout << "--------------------------------------------------" << endl;
     cout << "Find by" << endl;
     cout << "   1. Ep(Potential Energy) and k           Press 1" << endl;
     cout << "   2. F(Force) and k                       Press 2" << endl;
-    for(;;)//ask for dicision.
-    {
+    do{
         cout << "Press : ";
-        cin >> select;
-        if(select == 1 || select == 2) break;
+        getline(cin,select);
+        if(select == "1" || select == "2") break;
         else cout << "***Please Press 1-2." << endl;
-    }
+    }while(true);
     cout << "--------------------------------------------------" << endl;
-    switch(select)
-    {
-        case 1:
-            Chapter5_7("x");
-            break;
-        case 2:
-            Chapter5_8("x");
-            break;
-    }
+
+    if(select == "1") Chapter5_7("x");
+    else if(select == "2") Chapter5_8("x");
+
     cout << "#Result ----->  x = " << x << " m" << endl;
     cout << "--------------------------------------------------";
 }
