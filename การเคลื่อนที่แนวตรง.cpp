@@ -235,31 +235,11 @@ void findt(){ //หาเวลาในการเคลื่อนที่ 
 void rectilinearmotion(){
 
     cout << "find v(last speed) (no s)                           press 1" << '\n';
-    cout << "find u(first speed) (no s)                          press 2" << '\n';
-    cout << "find t(time) (no s)                                 press 3" << '\n';
-    cout << "find a(acceleration) (no s)                         press 4" << '\n';
-    cout << "find s(displacement) (no a)                         press 5" << '\n';
-    cout << "find t(time) (no a)                                 press 6" << '\n';
-    cout << "find u(first speed) (no a)                          press 7" << '\n';
-    cout << "find v(last speed) (no a)                           press 8" << '\n';
-    cout << "find s(displacement) (no v)                         press 9" << '\n';
-    cout << "find u(first speed) (no v)                          press 10" << '\n';
-    cout << "find a(acceleration) (no v)                         press 11" << '\n';
-    cout << "find t(time) (no a)                                 press 12" << '\n';
-    cout << "find s(displacement) (no u)                         press 13" << '\n';
-    cout << "find v(last speed) (no u)                           press 14" << '\n';
-    cout << "find a(acceleration) (no u)                         press 15" << '\n';
-    cout << "find t(time) (no u)                                 press 16" << '\n';
-    cout << "find v(last speed) (no t)                           press 17" << '\n';
-    cout << "find u(first speed) (no t)                          press 18" << '\n';
-    cout << "find a(acceleration) (no t)                         press 19" << '\n';
-    cout << "find s(displacement) (no t)                         press 20" << '\n';
-    cout << "find s(distance) (vt)                               press 21" << '\n';
-    cout << "find a(acceleration) ((v-u)/t)                      press 22" << '\n';
-    cout << "find a(acceleration) (s/t)                          press 23" << '\n';
-    cout << "find v(last speed) (no acceleration constant speed) press 24" << '\n';
-    cout << "find t(time) (moving time)                          press 25" << '\n';
-
+    cout << "find s(displacement) (no a)                         press 2" << '\n';
+    cout << "find s(displacement) (no v)                         press 3" << '\n';
+    cout << "find s(displacement) (no u)                         press 4" << '\n';
+    cout << "find v^2(last speed) (no t)                         press 5" << '\n';
+    cout << "find s(vt),a((v-u)/t),a(s/t),v(s/t),t(s/v)          press 6" << '\n';
     cout << "Please select number ";
     cin >> b;
     if(b == 1){
