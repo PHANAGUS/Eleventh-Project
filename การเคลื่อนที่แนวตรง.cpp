@@ -18,6 +18,8 @@ void findSS();
 void findA();
 void findA1();
 void findV0();
+void findt0();
+void finda();
 
 int main(){
 
@@ -52,7 +54,7 @@ int main(){
     return 0;
 }
 
-void findV1(){ //ไม่มีs
+void findV1(){ //ไม่มีsหาv
     cout << "v = u+at" << '\n';
     cout << "u = " ; cin >> u; 
     cout << "a = " ; cin >> a;
@@ -60,15 +62,31 @@ void findV1(){ //ไม่มีs
     cout << "v = " << u + a*t;
 }
 
-void findU(){ //ไม่มีs
-    cout << "u = v-at" << '\n';
+void findU(){ //ไม่มีsหาu
+    cout << "v = u+at" << '\n';
     cout << "v = " ; cin >> v;
     cout << "a = " ; cin >> a;
     cout << "t = " ; cin >> t;
     cout << "u = " << v - a*t;
 }
 
-void findS(){ //ไม่มีa
+void findt0(){ //ไม่มีsหาt
+    cout << "v = u+at" << '\n';
+    cout << "v = " ; cin >> v;
+    cout << "u = " ; cin >> u;
+    cout << "a = " ; cin >> a;
+    cout << "t = " << (v-u)/a;
+}
+
+void finda(){ //ไม่มีsหาa
+    cout << "v = u+at" << '\n';
+    cout << "v = " ; cin >> v;
+    cout << "u = " ; cin >> u;
+    cout << "t = " ; cin >> t;
+    cout << "a = " << (v-u)/t;
+}
+
+void findS(){ //ไม่มีaหาs
     cout << "s = ((u+v)/2)*t" << '\n';
     cout << "u = " ; cin >> u;
     cout << "v = " ; cin >> v;
@@ -76,7 +94,31 @@ void findS(){ //ไม่มีa
     cout << "s = " << (u+v)/2 * t;
 }
 
-void findS1(){ //ไม่มีv
+void findS0(){ //ไม่มีaหาt
+    cout << "s = ((u+v)/2)*t" << '\n';
+    cout << "u = " ; cin >> u;
+    cout << "v = " ; cin >> v;
+    cout << "s = " ; cin >> s;
+    cout << "t = " << s/((u+v)/2);
+}
+
+void findS00(){ //ไม่มีaหาu
+    cout << "s = ((u+v)/2)*t" << '\n';
+    cout << "s = " ; cin >> s;
+    cout << "v = " ; cin >> v;
+    cout << "t = " ; cin >> t;
+    cout << "u = " << ((2*s)-v)/t;
+}
+
+void findS000(){ //ไม่มีaหาv
+    cout << "s = ((u+v)/2)*t" << '\n';
+    cout << "s = " ; cin >> s;
+    cout << "u = " ; cin >> u;
+    cout << "t = " ; cin >> t;
+    cout << "v = " << ((2*s)-u)/t;
+}
+
+void findS1(){ //ไม่มีvหาs
     cout << "s = (u*t)+(1/2)*a*t^2" << '\n';
     cout << "u = " ; cin >> u;
     cout << "t = " ; cin >> t;
@@ -84,7 +126,31 @@ void findS1(){ //ไม่มีv
     cout << "s = " << u*t + 0.5*a*pow(t,2);
 }
 
-void findS2(){ //ไม่มีu
+void findS11(){ //ไม่มีvหาu
+    cout << "s = (u*t)+(1/2)*a*t^2" << '\n';
+    cout << "s = " ; cin >> s;
+    cout << "t = " ; cin >> t;
+    cout << "a = " ; cin >> a;
+    cout << "u = " << (s-0.5)/a*pow(t,3);
+}
+
+void find111(){ //ไม่มีvหาa
+    cout << "s = (u*t)+(1/2)*a*t^2" << '\n';
+    cout << "s = " ; cin >> s;
+    cout << "u = " ; cin >> u;
+    cout << "t = " ; cin >> t;
+    cout << "a = " << (s-(u*t)-(0.5))/pow(t,2);
+}
+
+void find1111(){ //ไม่มีvหาt
+    cout << "s = (u*t)+(1/2)*a*t^2" << '\n';
+    cout << "s = " ; cin >> s;
+    cout << "u = " ; cin >> u;
+    cout << "a = " ; cin >> a;
+    cout << "t = " << (s-0.5)/u*a;
+}
+
+void findS2(){ //ไม่มีuหาs
     cout << "s = (v*t)-(1/2)*a*t^2" << '\n';
     cout << "v = " ; cin >> v;
     cout << "t = " ; cin >> t;
@@ -92,12 +158,61 @@ void findS2(){ //ไม่มีu
     cout << "s = " << v*t - 0.5*a*pow(t,2);
 }
 
-void findV2(){ //ไม่มีt
+void findS22(){ //ไม่มีuหาv
+    cout << "s = (v*t)-(1/2)*a*t^2" << '\n';
+    cout << "s = " ; cin >> s;
+    cout << "t = " ; cin >> t;
+    cout << "a = " ; cin >> a;
+    cout << "v = " << (s+0.5)/a*pow(t,3);
+}
+
+void findS222(){ //ไม่มีuหาa
+    cout << "s = (v*t)-(1/2)*a*t^2" << '\n';
+    cout << "s = " ; cin >> s;
+    cout << "v = " ; cin >> v;
+    cout << "t = " ; cin >> t;
+    cout << "a = " << (s-(v*t)+(0.5))/pow(t,2);
+}
+
+
+void findS2222(){ //ไม่มีuหาt
+    cout << "s = (v*t)-(1/2)*a*t^2" << '\n';
+    cout << "s = " ; cin >> s;
+    cout << "v = " ; cin >> v;
+    cout << "a = " ; cin >> a;
+    cout << "t = " << (s+0.5)/v*a;
+}
+
+void findV2(){ //ไม่มีtหาv^2
     cout << "v^2 = u^2+2*a*s" << '\n';
     cout << "u = " ; cin >> u;
     cout << "a = " ; cin >> a;
     cout << "s = " ; cin >> s;
     cout << "v^2 = " << pow(u,2) + 2*a*s;
+}
+
+void findV22(){ //ไม่มีtหาu^2
+    cout << "v^2 = u^2+2*a*s" << '\n';
+    cout << "v = " ; cin >> v;
+    cout << "a = " ; cin >> a;
+    cout << "s = " ; cin >> s;
+    cout << "u^2 = " << (pow(v,2)-2)/a*s;
+}
+
+void findV222(){ //ไม่มีtหาa
+    cout << "v^2 = u^2+2*a*s" << '\n';
+    cout << "v = " ; cin >> v;
+    cout << "u = " ; cin >> u;
+    cout << "s = " ; cin >> s;
+    cout << "a = " << (pow(v,2)-pow(u,2)-2)/s;
+}
+
+void findV2222(){ //ไม่มีtหาs
+    cout << "v^2 = u^2+2*a*s" << '\n';
+    cout << "v = " ; cin >> v;
+    cout << "u = " ; cin >> u;
+    cout << "a = " ; cin >> a;
+    cout << "s = " << (pow(v,2)-pow(u,2)-2)/a;
 }
 
 void findSS(){ //ระยะทาง
