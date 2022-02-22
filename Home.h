@@ -1010,8 +1010,52 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
         	}
    	 }
 	//set topic3
+	if (selected_topic == 3) {
+		if (comboBox1->SelectedItem == "(Default)") {
+			CH3_E1_button->Visible = true;
+			CH3_E2_button->Visible = true;
+			CH3_E3_button->Visible = true;
+			CH3_E4_button->Visible = true;
+		}
+		else if (comboBox1->SelectItem == "v (Velocity)") {
+			CH3_E1_button->Visible = false;
+			CH3_E2_button->Visible = true;
+			CH3_E3_button->Visible = true;
+			CH3_E4_button->Visible = true;
+		}
+		else if (comboBox1->SelectItem == "f (Frequency)") {
+			CH3_E1_button->Visible = true;
+			CH3_E2_button->Visible = true;
+			CH3_E3_button->Visible = false;
+			CH3_E4_button->Visible = false;
+		}
+		else if (comboBox1->SelectItem == "T (Period)") {
+			CH3_E1_button->Visible = true;
+			CH3_E2_button->Visible = true;
+			CH3_E3_button->Visible = false;
+			CH3_E4_button->Visible = false;
+		}
+		else if (comboBox1->SelectItem == "R (Radius)") {
+			CH3_E1_button->Visible = false;
+			CH3_E2_button->Visible = true;
+			CH3_E3_button->Visible = true;
+			CH3_E4_button->Visible = true;
+		}
+		else if (comboBox1->SelectItem == "F[c] (Centripetal Force)") {
+			CH3_E1_button->Visible = false;
+			CH3_E2_button->Visible = false;
+			CH3_E3_button->Visible = true;
+			CH3_E4_button->Visible = false;
+		}
+		else if (comboBox1->SelectItem == "a[c] (Centripetal Acceleration)") {
+			CH3_E1_button->Visible = false;
+			CH3_E2_button->Visible = false;
+			CH3_E3_button->Visible = false;
+			CH3_E4_button->Visible = true;
+		}
+	}
 	//set topic4
-	if (selected_topic == 2) {
+	if (selected_topic == 4) {
 		if(comboBox1->SelectedItem == "(Default)") {
 			CH1_E1_button->Visible = true;
 			CH1_E2_button->Visible = true;
