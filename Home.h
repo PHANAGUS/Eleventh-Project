@@ -1011,6 +1011,50 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
    	 }
 	//set topic3
 	//set topic4
+	if (selected_topic == 2) {
+		if(comboBox1->SelectedItem == "(Default)") {
+			CH1_E1_button->Visible = true;
+			CH1_E2_button->Visible = true;
+			CH1_E3_button->Visible = true;
+			CH1_E4_button->Visible = true;
+		}
+		else if(comboBox1->SelectedItem == "v (Velocity)") {
+			CH1_E1_button->Visible = true;
+			CH1_E2_button->Visible = false;
+			CH1_E3_button->Visible = false;
+			CH1_E4_button->Visible = false;
+		}
+		else if(comboBox1->SelectedItem == "a (Acceleration)") {
+			CH1_E1_button->Visible = false;
+			CH1_E2_button->Visible = true;
+			CH1_E3_button->Visible = false;
+			CH1_E4_button->Visible = false;
+		}
+		else if(comboBox1->SelectedItem == "f (Frequency)") {
+			CH1_E1_button->Visible = false;
+			CH1_E2_button->Visible = false;
+			CH1_E3_button->Visible = false;
+			CH1_E4_button->Visible = true;
+		}
+		else if(comboBox1->SelectedItem == "T (Period)") {
+			CH1_E1_button->Visible = false;
+			CH1_E2_button->Visible = false;
+			CH1_E3_button->Visible = true;
+			CH1_E4_button->Visible = false;
+		}
+		else if(comboBox1->SelectedItem == "w (Angular Velocity)") {
+			CH1_E1_button->Visible = true;
+			CH1_E2_button->Visible = true;
+			CH1_E3_button->Visible = false;
+			CH1_E4_button->Visible = false;
+		}
+		else if(comboBox1->SelectedItem == "L (Rope Lenght)") {
+			CH1_E1_button->Visible = false;
+			CH1_E2_button->Visible = false;
+			CH1_E3_button->Visible = true;
+			CH1_E4_button->Visible = true;
+		}
+	}
 	//set topic5
 	if (selected_topic == 5) {
 		if (comboBox1->SelectedItem == "(Default)") {
