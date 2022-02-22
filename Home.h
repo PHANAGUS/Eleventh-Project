@@ -976,9 +976,143 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 		}
 	}
 	//set topic2
+	if (selected_topic == 2) {
+        	if (comboBox1->SelectedItem == "(Default)") {
+            		CH2_E1_button->Visible = true;
+            		CH2_E2_button->Visible = true;
+            		CH2_E3_button->Visible = true;
+
+		}
+        	else if (comboBox1->SelectedItem == "s[x] (Horizontal Displacement)") {
+            		CH2_E1_button->Visible = false;
+            		CH2_E2_button->Visible = true;
+            		CH2_E3_button->Visible = false;
+        	}
+       		 else if (comboBox1->SelectedItem == "s[y] (Vertical Displacement)") {
+            		CH2_E1_button->Visible = false;
+            		CH2_E2_button->Visible = false;
+            		CH2_E3_button->Visible = true;
+       	 	}
+        	else if (comboBox1->SelectedItem == "u (Initial Velocity)") {
+            		CH2_E1_button->Visible = true;
+            		CH2_E2_button->Visible = true;
+            		CH2_E3_button->Visible = true;
+        	}
+        	else if (comboBox1->SelectedItem == "v (Final Velocity)") {
+            		CH2_E1_button->Visible = false;
+            		CH2_E2_button->Visible = false;
+            		CH2_E3_button->Visible = false;
+        	}
+        	else if (comboBox1->SelectedItem == "t (Time)") {
+            		CH2_E1_button->Visible = true;
+            		CH2_E2_button->Visible = false;
+           	 	CH2_E3_button->Visible = false;
+        	}
+   	 }
 	//set topic3
 	//set topic4
 	//set topic5
+	if (selected_topic == 5) {
+		if (comboBox1->SelectedItem == "(Default)") {
+			CH5_E1_button->Visible = true;
+			CH5_E2_button->Visible = true;
+			CH5_E3_button->Visible = true;
+			CH5_E4_button->Visible = true;
+			CH5_E5_button->Visible = true;
+			CH5_E6_button->Visible = true;
+            CH5_E7_button->Visible = true;
+		}
+		else if (comboBox1->SelectedItem == "W (Work)") {
+			CH5_E1_button->Visible = true;
+			CH5_E2_button->Visible = true;
+			CH5_E3_button->Visible = false;
+			CH5_E4_button->Visible = false;
+			CH5_E5_button->Visible = false;
+			CH5_E6_button->Visible = false;
+            CH5_E7_button->Visible = false;
+		}
+		else if (comboBox1->SelectedItem == "F (Force)") {
+			CH5_E1_button->Visible = true;
+			CH5_E2_button->Visible = false;
+			CH5_E3_button->Visible = true;
+			CH5_E4_button->Visible = false;
+			CH5_E5_button->Visible = false;
+			CH5_E6_button->Visible = false;
+            CH5_E7_button->Visible = true;
+		}
+		else if (comboBox1->SelectedItem == "s (Displacement)") {
+			CH5_E1_button->Visible = true;
+			CH5_E2_button->Visible = false;
+			CH5_E3_button->Visible = false;
+			CH5_E4_button->Visible = false;
+			CH5_E5_button->Visible = false;
+			CH5_E6_button->Visible = false;
+            CH5_E7_button->Visible = false;
+		}
+		else if (comboBox1->SelectedItem == "P (Power)") {
+			CH5_E1_button->Visible = false;
+			CH5_E2_button->Visible = true;
+			CH5_E3_button->Visible = true;
+			CH5_E4_button->Visible = false;
+			CH5_E5_button->Visible = false;
+			CH5_E6_button->Visible = false;
+            CH5_E7_button->Visible = false;
+		}
+		else if (comboBox1->SelectedItem == "t (Time)") {
+			CH5_E1_button->Visible = false;
+			CH5_E2_button->Visible = true;
+			CH5_E3_button->Visible = false;
+			CH5_E4_button->Visible = false;
+			CH5_E5_button->Visible = false;
+			CH5_E6_button->Visible = false;
+            CH5_E7_button->Visible = false;
+		}
+        else if (comboBox1->SelectedItem == "v (Velocity)") {
+			CH5_E1_button->Visible = false;
+			CH5_E2_button->Visible = false;
+			CH5_E3_button->Visible = true;
+			CH5_E4_button->Visible = true;
+			CH5_E5_button->Visible = false;
+			CH5_E6_button->Visible = false;
+            CH5_E7_button->Visible = false;
+		}
+		else if (comboBox1->SelectedItem == "E[k] (Kinetic Energy)") {
+			CH5_E1_button->Visible = false;
+			CH5_E2_button->Visible = false;
+			CH5_E3_button->Visible = false;
+			CH5_E4_button->Visible = true;
+			CH5_E5_button->Visible = false;
+			CH5_E6_button->Visible = false;
+            CH5_E7_button->Visible = false;
+		}
+		else if (comboBox1->SelectedItem == "E[h] (Potential Energy)") {
+			CH5_E1_button->Visible = false;
+			CH5_E2_button->Visible = false;
+			CH5_E3_button->Visible = false;
+			CH5_E4_button->Visible = false;
+			CH5_E5_button->Visible = true;
+			CH5_E6_button->Visible = true;
+            CH5_E7_button->Visible = false;
+		}
+        else if (comboBox1->SelectedItem == "k (Spring Constant)") {
+			CH5_E1_button->Visible = false;
+			CH5_E2_button->Visible = false;
+			CH5_E3_button->Visible = false;
+			CH5_E4_button->Visible = false;
+			CH5_E5_button->Visible = false;
+			CH5_E6_button->Visible = true;
+            CH5_E7_button->Visible = false;
+		}
+		else if (comboBox1->SelectedItem == "x (Spring stretch/compression)") {
+			CH5_E1_button->Visible = false;
+			CH5_E2_button->Visible = false;
+			CH5_E3_button->Visible = false;
+			CH5_E4_button->Visible = false;
+			CH5_E5_button->Visible = false;
+			CH5_E6_button->Visible = true;
+            CH5_E7_button->Visible = true;
+		}
+	}
 }
 private: System::Void CH1_E1_button_Click(System::Object^ sender, System::EventArgs^ e) {
 	CH1_E1 obj;
