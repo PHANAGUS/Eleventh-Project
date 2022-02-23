@@ -1086,7 +1086,7 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 		CH1_E6_button->Visible = false;
 		CH2_E1_button->Visible = false;
 		CH2_E2_button->Visible = false;
-		CH2_E3_button->Visible = false;
+		CH2_E3_button->Visible = true;
 		CH3_E1_button->Visible = false;
 		CH3_E2_button->Visible = false;
 		CH3_E3_button->Visible = false;
@@ -1111,7 +1111,7 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 		CH1_E5_button->Visible = false;
 		CH1_E6_button->Visible = false;
 		CH2_E1_button->Visible = false;
-		CH2_E2_button->Visible = false;
+		CH2_E2_button->Visible = true;
 		CH2_E3_button->Visible = false;
 		CH3_E1_button->Visible = false;
 		CH3_E2_button->Visible = false;
@@ -1146,7 +1146,7 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 		CH4_E1_button->Visible = false;
 		CH4_E2_button->Visible = false;
 		CH4_E3_button->Visible = false;
-		CH4_E4_button->Visible = false;
+		CH4_E4_button->Visible = true;
 		CH5_E1_button->Visible = false;
 		CH5_E2_button->Visible = false;
 		CH5_E3_button->Visible = false;
@@ -1165,13 +1165,13 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 		CH2_E1_button->Visible = false;
 		CH2_E2_button->Visible = false;
 		CH2_E3_button->Visible = false;
-		CH3_E1_button->Visible = false;
-		CH3_E2_button->Visible = false;
+		CH3_E1_button->Visible = true;
+		CH3_E2_button->Visible = true;
 		CH3_E3_button->Visible = false;
 		CH3_E4_button->Visible = false;
 		CH4_E1_button->Visible = false;
 		CH4_E2_button->Visible = false;
-		CH4_E3_button->Visible = false;
+		CH4_E3_button->Visible = true;
 		CH4_E4_button->Visible = false;
 		CH5_E1_button->Visible = false;
 		CH5_E2_button->Visible = false;
@@ -1192,9 +1192,9 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 		CH2_E2_button->Visible = false;
 		CH2_E3_button->Visible = false;
 		CH3_E1_button->Visible = false;
-		CH3_E2_button->Visible = false;
-		CH3_E3_button->Visible = false;
-		CH3_E4_button->Visible = false;
+		CH3_E2_button->Visible = true;
+		CH3_E3_button->Visible = true;
+		CH3_E4_button->Visible = true;
 		CH4_E1_button->Visible = false;
 		CH4_E2_button->Visible = false;
 		CH4_E3_button->Visible = false;
@@ -1219,7 +1219,7 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 		CH2_E3_button->Visible = false;
 		CH3_E1_button->Visible = false;
 		CH3_E2_button->Visible = false;
-		CH3_E3_button->Visible = false;
+		CH3_E3_button->Visible = true;
 		CH3_E4_button->Visible = false;
 		CH4_E1_button->Visible = false;
 		CH4_E2_button->Visible = false;
@@ -1246,7 +1246,7 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 		CH3_E1_button->Visible = false;
 		CH3_E2_button->Visible = false;
 		CH3_E3_button->Visible = false;
-		CH3_E4_button->Visible = false;
+		CH3_E4_button->Visible = true;
 		CH4_E1_button->Visible = false;
 		CH4_E2_button->Visible = false;
 		CH4_E3_button->Visible = false;
@@ -1273,9 +1273,9 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 		CH3_E2_button->Visible = false;
 		CH3_E3_button->Visible = false;
 		CH3_E4_button->Visible = false;
-		CH4_E1_button->Visible = false;
-		CH4_E2_button->Visible = false;
-		CH4_E3_button->Visible = false;
+		CH4_E1_button->Visible = true;
+		CH4_E2_button->Visible = true;
+		CH4_E3_button->Visible = true;
 		CH4_E4_button->Visible = false;
 		CH5_E1_button->Visible = false;
 		CH5_E2_button->Visible = false;
@@ -1301,8 +1301,8 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 		CH3_E4_button->Visible = false;
 		CH4_E1_button->Visible = false;
 		CH4_E2_button->Visible = false;
-		CH4_E3_button->Visible = false;
-		CH4_E4_button->Visible = false;
+		CH4_E3_button->Visible = true;
+		CH4_E4_button->Visible = true;
 		CH5_E1_button->Visible = false;
 		CH5_E2_button->Visible = false;
 		CH5_E3_button->Visible = false;
@@ -1329,8 +1329,8 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 		CH4_E2_button->Visible = false;
 		CH4_E3_button->Visible = false;
 		CH4_E4_button->Visible = false;
-		CH5_E1_button->Visible = false;
-		CH5_E2_button->Visible = false;
+		CH5_E1_button->Visible = true;
+		CH5_E2_button->Visible = true;
 		CH5_E3_button->Visible = false;
 		CH5_E4_button->Visible = false;
 		CH5_E5_button->Visible = false;
@@ -1355,13 +1355,13 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 		CH4_E2_button->Visible = false;
 		CH4_E3_button->Visible = false;
 		CH4_E4_button->Visible = false;
-		CH5_E1_button->Visible = false;
+		CH5_E1_button->Visible = true;
 		CH5_E2_button->Visible = false;
-		CH5_E3_button->Visible = false;
+		CH5_E3_button->Visible = true;
 		CH5_E4_button->Visible = false;
 		CH5_E5_button->Visible = false;
 		CH5_E6_button->Visible = false;
-		CH5_E7_button->Visible = false;
+		CH5_E7_button->Visible = true;
 		}
 		else if (comboBox1->SelectedItem == "P (Power)") {
 		CH1_E1_button->Visible = false;
@@ -1382,8 +1382,8 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 		CH4_E3_button->Visible = false;
 		CH4_E4_button->Visible = false;
 		CH5_E1_button->Visible = false;
-		CH5_E2_button->Visible = false;
-		CH5_E3_button->Visible = false;
+		CH5_E2_button->Visible = true;
+		CH5_E3_button->Visible = true;
 		CH5_E4_button->Visible = false;
 		CH5_E5_button->Visible = false;
 		CH5_E6_button->Visible = false;
@@ -1410,7 +1410,7 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 		CH5_E1_button->Visible = false;
 		CH5_E2_button->Visible = false;
 		CH5_E3_button->Visible = false;
-		CH5_E4_button->Visible = false;
+		CH5_E4_button->Visible = true;
 		CH5_E5_button->Visible = false;
 		CH5_E6_button->Visible = false;
 		CH5_E7_button->Visible = false;
@@ -1437,8 +1437,8 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 		CH5_E2_button->Visible = false;
 		CH5_E3_button->Visible = false;
 		CH5_E4_button->Visible = false;
-		CH5_E5_button->Visible = false;
-		CH5_E6_button->Visible = false;
+		CH5_E5_button->Visible = true;
+		CH5_E6_button->Visible = true;
 		CH5_E7_button->Visible = false;
 		}
 		else if (comboBox1->SelectedItem == "k (Spring Constant)") {
@@ -1464,8 +1464,8 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 		CH5_E3_button->Visible = false;
 		CH5_E4_button->Visible = false;
 		CH5_E5_button->Visible = false;
-		CH5_E6_button->Visible = false;
-		CH5_E7_button->Visible = false;
+		CH5_E6_button->Visible = true;
+		CH5_E7_button->Visible = true;
 		}
 		else if (comboBox1->SelectedItem == "x (Spring Stretch/Compression)") {
 		CH1_E1_button->Visible = false;
@@ -1490,8 +1490,8 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 		CH5_E3_button->Visible = false;
 		CH5_E4_button->Visible = false;
 		CH5_E5_button->Visible = false;
-		CH5_E6_button->Visible = false;
-		CH5_E7_button->Visible = false;
+		CH5_E6_button->Visible = true;
+		CH5_E7_button->Visible = true;
 		}
 	}
 	//set topic1
