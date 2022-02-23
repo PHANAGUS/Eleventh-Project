@@ -922,7 +922,7 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 	//set topic0
 	if (selected_topic == 0) {
 		if (comboBox1->SelectedItem == "(Default)"){
-			CH1_E1_button->Visible = true;
+			CH1_E1_button->Visible = false;
 			CH1_E2_button->Visible = true;
 			CH1_E3_button->Visible = true;
 			CH1_E4_button->Visible = true;
