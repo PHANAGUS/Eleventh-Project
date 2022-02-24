@@ -61,6 +61,8 @@ namespace PhysicsCalculator {
 	private: System::Windows::Forms::ComboBox^ v_comboBox;
 	private: System::Windows::Forms::TextBox^ v_textBox;
 	private: System::Windows::Forms::Label^ v_label;
+	private: System::Windows::Forms::Label^ label4;
+	private: System::Windows::Forms::Label^ ans2_label;
 
 
 
@@ -102,6 +104,8 @@ namespace PhysicsCalculator {
 			this->v_comboBox = (gcnew System::Windows::Forms::ComboBox());
 			this->v_textBox = (gcnew System::Windows::Forms::TextBox());
 			this->v_label = (gcnew System::Windows::Forms::Label());
+			this->label4 = (gcnew System::Windows::Forms::Label());
+			this->ans2_label = (gcnew System::Windows::Forms::Label());
 			this->SuspendLayout();
 			// 
 			// a_comboBox
@@ -146,7 +150,7 @@ namespace PhysicsCalculator {
 			this->convert_button->Enabled = false;
 			this->convert_button->Font = (gcnew System::Drawing::Font(L"CordiaUPC", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->convert_button->Location = System::Drawing::Point(699, 576);
+			this->convert_button->Location = System::Drawing::Point(699, 502);
 			this->convert_button->Name = L"convert_button";
 			this->convert_button->Size = System::Drawing::Size(89, 48);
 			this->convert_button->TabIndex = 82;
@@ -198,7 +202,7 @@ namespace PhysicsCalculator {
 			this->ans_combo->Enabled = false;
 			this->ans_combo->Font = (gcnew System::Drawing::Font(L"CordiaUPC", 21.75F));
 			this->ans_combo->FormattingEnabled = true;
-			this->ans_combo->Location = System::Drawing::Point(599, 576);
+			this->ans_combo->Location = System::Drawing::Point(599, 502);
 			this->ans_combo->Name = L"ans_combo";
 			this->ans_combo->Size = System::Drawing::Size(94, 48);
 			this->ans_combo->TabIndex = 77;
@@ -262,7 +266,7 @@ namespace PhysicsCalculator {
 				static_cast<System::Byte>(0)));
 			this->ans_label2->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(192)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
 				static_cast<System::Int32>(static_cast<System::Byte>(0)));
-			this->ans_label2->Location = System::Drawing::Point(89, 575);
+			this->ans_label2->Location = System::Drawing::Point(89, 576);
 			this->ans_label2->Name = L"ans_label2";
 			this->ans_label2->Size = System::Drawing::Size(56, 38);
 			this->ans_label2->TabIndex = 70;
@@ -278,7 +282,7 @@ namespace PhysicsCalculator {
 				static_cast<System::Byte>(0)));
 			this->ans_label->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(192)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
 				static_cast<System::Int32>(static_cast<System::Byte>(0)));
-			this->ans_label->Location = System::Drawing::Point(140, 576);
+			this->ans_label->Location = System::Drawing::Point(140, 577);
 			this->ans_label->Name = L"ans_label";
 			this->ans_label->Size = System::Drawing::Size(35, 38);
 			this->ans_label->TabIndex = 69;
@@ -293,7 +297,7 @@ namespace PhysicsCalculator {
 			this->label3->Font = (gcnew System::Drawing::Font(L"CordiaUPC", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label3->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->label3->Location = System::Drawing::Point(545, 581);
+			this->label3->Location = System::Drawing::Point(545, 507);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(59, 37);
 			this->label3->TabIndex = 68;
@@ -412,6 +416,37 @@ namespace PhysicsCalculator {
 			this->v_label->Text = L"v =";
 			this->v_label->TextAlign = System::Drawing::ContentAlignment::MiddleRight;
 			// 
+			// label4
+			// 
+			this->label4->AutoSize = true;
+			this->label4->BackColor = System::Drawing::Color::Transparent;
+			this->label4->Font = (gcnew System::Drawing::Font(L"CordiaUPC", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label4->ForeColor = System::Drawing::SystemColors::ControlText;
+			this->label4->Location = System::Drawing::Point(426, 581);
+			this->label4->Name = L"label4";
+			this->label4->Size = System::Drawing::Size(48, 37);
+			this->label4->TabIndex = 67;
+			this->label4->Text = L"and";
+			this->label4->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			this->label4->Visible = false;
+			// 
+			// ans2_label
+			// 
+			this->ans2_label->AutoSize = true;
+			this->ans2_label->BackColor = System::Drawing::Color::Transparent;
+			this->ans2_label->Font = (gcnew System::Drawing::Font(L"FC Lamoon", 30, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->ans2_label->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(192)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
+				static_cast<System::Int32>(static_cast<System::Byte>(0)));
+			this->ans2_label->Location = System::Drawing::Point(470, 576);
+			this->ans2_label->Name = L"ans2_label";
+			this->ans2_label->Size = System::Drawing::Size(35, 38);
+			this->ans2_label->TabIndex = 69;
+			this->ans2_label->Text = L"0";
+			this->ans2_label->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			this->ans2_label->Visible = false;
+			// 
 			// CH1_E4
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -435,8 +470,10 @@ namespace PhysicsCalculator {
 			this->Controls->Add(this->t_label);
 			this->Controls->Add(this->s_label);
 			this->Controls->Add(this->ans_label2);
+			this->Controls->Add(this->ans2_label);
 			this->Controls->Add(this->ans_label);
 			this->Controls->Add(this->label3);
+			this->Controls->Add(this->label4);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->cal_button);
@@ -456,12 +493,14 @@ namespace PhysicsCalculator {
 		//==========================================[เขียนฟังก์ชัน]==============================================//
 
 public:
-	double s, v, a, t, ans;
+	double s, v, a, t, ans, ans2;
 	String^ unit;
 
 	//ตั้งค่าหน้าต่าง
 	void set_window() {
 		label1->Visible = 0;
+		label4->Hide();
+		ans2_label->Hide();
 
 		s_comboBox->Show();
 		v_comboBox->Show();
@@ -587,30 +626,36 @@ public:
 	void cal(char find) {
 		if (find == 's') {
 			v = System::Convert::ToDouble(v_textBox->Text); if (v_comboBox->SelectedItem == "km/h") v *= (1000.0000 / 3600.0000);
-			a = System::Convert::ToDouble(a_textBox->Text); if (a_comboBox->SelectedItem == "km/h")
+			a = System::Convert::ToDouble(a_textBox->Text);
 			t = System::Convert::ToDouble(t_textBox->Text); if (t_comboBox->SelectedItem == "min") t *= 60;
 															else if (t_comboBox->SelectedItem == "h") t *= 3600;
-			ans = (v*t)-(0.5*a*pow(t,2));
+			ans = (v*t)-((a*t*t)/2);
 		}
 		else if (find == 'v') {
 			s = System::Convert::ToDouble(s_textBox->Text); if (s_comboBox->SelectedItem == "km") s *= 1000.0000;
-			a = System::Convert::ToDouble(a_textBox->Text); if (a_comboBox->SelectedItem == "km/h")
+			a = System::Convert::ToDouble(a_textBox->Text);
 			t = System::Convert::ToDouble(t_textBox->Text);	if (t_comboBox->SelectedItem == "min") t *= 60;
 															else if (t_comboBox->SelectedItem == "h") t *= 3600;
-			ans = (s-((1/2)*a*t*t))/t;
+			ans = (s-(a*t*t)/2)/t;
 		}
 		else if (find == 'a') {
 			s = System::Convert::ToDouble(s_textBox->Text); if (s_comboBox->SelectedItem == "km") s *= 1000.0000;
 			v = System::Convert::ToDouble(v_textBox->Text); if (v_comboBox->SelectedItem == "km/h") v *= (1000.0000 / 3600.0000);
 			t = System::Convert::ToDouble(t_textBox->Text); if (t_comboBox->SelectedItem == "min") t *= 60;
 															else if (t_comboBox->SelectedItem == "h") t *= 3600;
-			ans = (s-(v*t)+(0.5))/pow(t,2);
+			ans = (-2)*(s-(v*t))/pow(t,2);
 		}
 		else {//หา t
 			s = System::Convert::ToDouble(s_textBox->Text); if (s_comboBox->SelectedItem == "km") s *= 1000.0000;
 			v = System::Convert::ToDouble(v_textBox->Text); if (v_comboBox->SelectedItem == "km/h") v *= (1000.0000 / 3600.0000);
-			a = System::Convert::ToDouble(a_textBox->Text); if (a_comboBox->SelectedItem == "km/h")
-				ans = ((v+sqrt((v*v)+(s*a*s)))/a) << " and " << ((v-sqrt((v*v)+(s*a*s)))/a);
+			a = System::Convert::ToDouble(a_textBox->Text);
+			if (v * v - 2 * a * s < 0) {
+				ans_label2->Text = "Error";
+			}
+			else {
+				ans = ((v) + sqrt(v * v - 2 * a * s)) / a;
+				ans2 = ((v) - sqrt(v * v - 2 * a * s)) / a;
+			}
 		}
 	}
 
@@ -649,25 +694,31 @@ public:
 		else if (unit == "s") {
 			if (Convert::ToString(ans_combo->SelectedItem) == "min") {
 				ans /= 60;
+				ans2 /= 60;
 			}
 			else if (Convert::ToString(ans_combo->SelectedItem) == "h") {
 				ans /= 3600;
+				ans2 /= 3600;
 			}
 		}
 		else if (unit == "min") {
 			if (Convert::ToString(ans_combo->SelectedItem) == "s") {
 				ans *= 60;
+				ans2 *= 60;
 			}
 			else if (Convert::ToString(ans_combo->SelectedItem) == "h") {
 				ans /= 60;
+				ans2 /= 60;
 			}
 		}
 		else if (unit == "h") {
 			if (Convert::ToString(ans_combo->SelectedItem) == "s") {
 				ans *= 3600;
+				ans2 *= 3600;
 			}
 			else if (Convert::ToString(ans_combo->SelectedItem) == "min") {
 				ans *= 60;
+				ans2 *= 60;
 			}
 		}
 		else if (unit == "m") {
@@ -689,6 +740,8 @@ public:
 		convert_button->Enabled = 0;
 		ans_label->Hide();
 		ans_label2->Hide();
+		label4->Hide();
+		ans2_label->Hide();
 
 		s_label->Enabled = 0;
 		s_textBox->Enabled = 0;
@@ -727,29 +780,38 @@ private: System::Void cal_button_Click(System::Object^ sender, System::EventArgs
 	}
 	else {
 		cal(find);
-		if (find == 's') {
-			set_ans_combobox('s');
-			ans_combo->SelectedIndex = 0;
+		if (ans_label2->Text != "Error") {
+			if (find == 's') {
+				set_ans_combobox('s');
+				ans_combo->SelectedIndex = 0;
+			}
+			else if (find == 'v') {
+				set_ans_combobox('v');
+				ans_combo->SelectedIndex = 0;
+			}
+			else if (find == 'a') {
+				set_ans_combobox('a');
+				ans_combo->SelectedIndex = 0;
+			}
+			else {
+				set_ans_combobox('t');
+				ans_combo->SelectedIndex = 0;
+			}
+
+			if (find == 't') {
+				label4->Visible = 1;
+				ans2_label->Text = System::Convert::ToString(ans2);
+				ans2_label->Visible = 1;
+			}
+			ans_label->Text = System::Convert::ToString(ans);
+			unit = System::Convert::ToString(ans_combo->SelectedItem);
+			ans_label->Visible = 1;
+			ans_label2->Visible = 1;
+			ans_combo->Enabled = 1;
+			ans_combo->Visible = 1;
 		}
-		else if (find == 'v') {
-			set_ans_combobox('v');
-			ans_combo->SelectedIndex = 0;
-		}
-		else if (find == 'a') {
-			set_ans_combobox('a');
-			ans_combo->SelectedIndex = 0;
-		}
-		else {
-			set_ans_combobox('t');
-			ans_combo->SelectedIndex = 0;
-		}
-		label1->Hide();
-		ans_label->Text = System::Convert::ToString(ans);
-		unit = System::Convert::ToString(ans_combo->SelectedItem);
-		ans_label->Visible = 1;
 		ans_label2->Visible = 1;
-		ans_combo->Enabled = 1;
-		ans_combo->Visible = 1;
+		label1->Hide();
 		//cal_button->Enabled = 0;
 	}
 }

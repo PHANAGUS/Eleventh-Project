@@ -1,5 +1,24 @@
 ﻿#pragma once
 #include "CH1_E1.h"
+#include "CH1_E2.h"
+#include "CH1_E3.h"
+#include "CH1_E4.h"
+#include "CH1_E5.h"
+#include "CH1_E6.h"
+#include "CH2_E1.h"
+#include "CH2_E2.h"
+#include "CH2_E3.h"
+#include "CH3_E1.h"
+#include "CH3_E2.h"
+#include "CH3_E3.h"
+#include "CH3_E4.h"
+#include "CH5_E1.h"
+#include "CH5_E2.h"
+#include "CH5_E3.h"
+#include "CH5_E4.h"
+#include "CH5_E5.h"
+#include "CH5_E6.h"
+#include "CH5_E7.h"
 namespace PhysicsCalculator {
 
 	using namespace System;
@@ -194,6 +213,7 @@ namespace PhysicsCalculator {
 			// 
 			// Chapter4_button
 			// 
+			this->Chapter4_button->Enabled = false;
 			this->Chapter4_button->Font = (gcnew System::Drawing::Font(L"TH Sarabun New", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Chapter4_button->Location = System::Drawing::Point(3, 249);
@@ -202,6 +222,7 @@ namespace PhysicsCalculator {
 			this->Chapter4_button->TabIndex = 3;
 			this->Chapter4_button->Text = L"การเคลื่อนที่แบบฮาร์มอนิก";
 			this->Chapter4_button->UseVisualStyleBackColor = true;
+			this->Chapter4_button->Visible = false;
 			this->Chapter4_button->Click += gcnew System::EventHandler(this, &Home::Chapter4_button_Click);
 			// 
 			// Chapter5_button
@@ -270,6 +291,7 @@ namespace PhysicsCalculator {
 			this->CH1_E2_button->TabIndex = 2;
 			this->CH1_E2_button->Text = L"CH1_E2_button";
 			this->CH1_E2_button->UseVisualStyleBackColor = true;
+			this->CH1_E2_button->Click += gcnew System::EventHandler(this, &Home::CH1_E2_button_Click);
 			// 
 			// CH1_E3_button
 			// 
@@ -281,6 +303,7 @@ namespace PhysicsCalculator {
 			this->CH1_E3_button->TabIndex = 3;
 			this->CH1_E3_button->Text = L"CH1_E3_button";
 			this->CH1_E3_button->UseVisualStyleBackColor = true;
+			this->CH1_E3_button->Click += gcnew System::EventHandler(this, &Home::CH1_E3_button_Click);
 			// 
 			// CH1_E4_button
 			// 
@@ -292,6 +315,7 @@ namespace PhysicsCalculator {
 			this->CH1_E4_button->TabIndex = 4;
 			this->CH1_E4_button->Text = L"CH1_E4_button";
 			this->CH1_E4_button->UseVisualStyleBackColor = true;
+			this->CH1_E4_button->Click += gcnew System::EventHandler(this, &Home::CH1_E4_button_Click);
 			// 
 			// CH1_E5_button
 			// 
@@ -303,6 +327,7 @@ namespace PhysicsCalculator {
 			this->CH1_E5_button->TabIndex = 5;
 			this->CH1_E5_button->Text = L"CH1_E5_button";
 			this->CH1_E5_button->UseVisualStyleBackColor = true;
+			this->CH1_E5_button->Click += gcnew System::EventHandler(this, &Home::CH1_E5_button_Click);
 			// 
 			// CH1_E6_button
 			// 
@@ -314,6 +339,7 @@ namespace PhysicsCalculator {
 			this->CH1_E6_button->TabIndex = 6;
 			this->CH1_E6_button->Text = L"CH1_E6_button";
 			this->CH1_E6_button->UseVisualStyleBackColor = true;
+			this->CH1_E6_button->Click += gcnew System::EventHandler(this, &Home::CH1_E6_button_Click);
 			// 
 			// CH2_E1_button
 			// 
@@ -325,6 +351,7 @@ namespace PhysicsCalculator {
 			this->CH2_E1_button->TabIndex = 7;
 			this->CH2_E1_button->Text = L"CH2_E1_button";
 			this->CH2_E1_button->UseVisualStyleBackColor = true;
+			this->CH2_E1_button->Click += gcnew System::EventHandler(this, &Home::CH2_E1_button_Click);
 			// 
 			// CH2_E2_button
 			// 
@@ -336,6 +363,7 @@ namespace PhysicsCalculator {
 			this->CH2_E2_button->TabIndex = 8;
 			this->CH2_E2_button->Text = L"CH2_E2_button";
 			this->CH2_E2_button->UseVisualStyleBackColor = true;
+			this->CH2_E2_button->Click += gcnew System::EventHandler(this, &Home::CH2_E2_button_Click);
 			// 
 			// CH2_E3_button
 			// 
@@ -347,6 +375,7 @@ namespace PhysicsCalculator {
 			this->CH2_E3_button->TabIndex = 9;
 			this->CH2_E3_button->Text = L"CH2_E3_button";
 			this->CH2_E3_button->UseVisualStyleBackColor = true;
+			this->CH2_E3_button->Click += gcnew System::EventHandler(this, &Home::CH2_E3_button_Click);
 			// 
 			// CH3_E1_button
 			// 
@@ -358,6 +387,7 @@ namespace PhysicsCalculator {
 			this->CH3_E1_button->TabIndex = 10;
 			this->CH3_E1_button->Text = L"CH3_E1_button";
 			this->CH3_E1_button->UseVisualStyleBackColor = true;
+			this->CH3_E1_button->Click += gcnew System::EventHandler(this, &Home::CH3_E1_button_Click);
 			// 
 			// CH3_E2_button
 			// 
@@ -369,6 +399,7 @@ namespace PhysicsCalculator {
 			this->CH3_E2_button->TabIndex = 11;
 			this->CH3_E2_button->Text = L"CH3_E2_button";
 			this->CH3_E2_button->UseVisualStyleBackColor = true;
+			this->CH3_E2_button->Click += gcnew System::EventHandler(this, &Home::CH3_E2_button_Click);
 			// 
 			// CH3_E3_button
 			// 
@@ -380,6 +411,7 @@ namespace PhysicsCalculator {
 			this->CH3_E3_button->TabIndex = 12;
 			this->CH3_E3_button->Text = L"CH3_E3_button";
 			this->CH3_E3_button->UseVisualStyleBackColor = true;
+			this->CH3_E3_button->Click += gcnew System::EventHandler(this, &Home::CH3_E3_button_Click);
 			// 
 			// CH3_E4_button
 			// 
@@ -391,9 +423,11 @@ namespace PhysicsCalculator {
 			this->CH3_E4_button->TabIndex = 13;
 			this->CH3_E4_button->Text = L"CH3_E4_button";
 			this->CH3_E4_button->UseVisualStyleBackColor = true;
+			this->CH3_E4_button->Click += gcnew System::EventHandler(this, &Home::CH3_E4_button_Click);
 			// 
 			// CH4_E1_button
 			// 
+			this->CH4_E1_button->Enabled = false;
 			this->CH4_E1_button->Font = (gcnew System::Drawing::Font(L"TH Sarabun New", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->CH4_E1_button->Location = System::Drawing::Point(3, 1069);
@@ -402,9 +436,11 @@ namespace PhysicsCalculator {
 			this->CH4_E1_button->TabIndex = 14;
 			this->CH4_E1_button->Text = L"CH4_E1_button";
 			this->CH4_E1_button->UseVisualStyleBackColor = true;
+			this->CH4_E1_button->Visible = false;
 			// 
 			// CH4_E2_button
 			// 
+			this->CH4_E2_button->Enabled = false;
 			this->CH4_E2_button->Font = (gcnew System::Drawing::Font(L"TH Sarabun New", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->CH4_E2_button->Location = System::Drawing::Point(3, 1151);
@@ -413,9 +449,11 @@ namespace PhysicsCalculator {
 			this->CH4_E2_button->TabIndex = 15;
 			this->CH4_E2_button->Text = L"CH4_E2_button";
 			this->CH4_E2_button->UseVisualStyleBackColor = true;
+			this->CH4_E2_button->Visible = false;
 			// 
 			// CH4_E3_button
 			// 
+			this->CH4_E3_button->Enabled = false;
 			this->CH4_E3_button->Font = (gcnew System::Drawing::Font(L"TH Sarabun New", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->CH4_E3_button->Location = System::Drawing::Point(3, 1233);
@@ -424,9 +462,11 @@ namespace PhysicsCalculator {
 			this->CH4_E3_button->TabIndex = 16;
 			this->CH4_E3_button->Text = L"CH4_E3_button";
 			this->CH4_E3_button->UseVisualStyleBackColor = true;
+			this->CH4_E3_button->Visible = false;
 			// 
 			// CH4_E4_button
 			// 
+			this->CH4_E4_button->Enabled = false;
 			this->CH4_E4_button->Font = (gcnew System::Drawing::Font(L"TH Sarabun New", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->CH4_E4_button->Location = System::Drawing::Point(3, 1315);
@@ -435,6 +475,7 @@ namespace PhysicsCalculator {
 			this->CH4_E4_button->TabIndex = 17;
 			this->CH4_E4_button->Text = L"CH4_E4_button";
 			this->CH4_E4_button->UseVisualStyleBackColor = true;
+			this->CH4_E4_button->Visible = false;
 			// 
 			// CH5_E1_button
 			// 
@@ -446,6 +487,7 @@ namespace PhysicsCalculator {
 			this->CH5_E1_button->TabIndex = 18;
 			this->CH5_E1_button->Text = L"CH5_E1_button";
 			this->CH5_E1_button->UseVisualStyleBackColor = true;
+			this->CH5_E1_button->Click += gcnew System::EventHandler(this, &Home::CH5_E1_button_Click);
 			// 
 			// CH5_E2_button
 			// 
@@ -457,6 +499,7 @@ namespace PhysicsCalculator {
 			this->CH5_E2_button->TabIndex = 19;
 			this->CH5_E2_button->Text = L"CH5_E2_button";
 			this->CH5_E2_button->UseVisualStyleBackColor = true;
+			this->CH5_E2_button->Click += gcnew System::EventHandler(this, &Home::CH5_E2_button_Click);
 			// 
 			// CH5_E3_button
 			// 
@@ -468,6 +511,7 @@ namespace PhysicsCalculator {
 			this->CH5_E3_button->TabIndex = 20;
 			this->CH5_E3_button->Text = L"CH5_E3_button";
 			this->CH5_E3_button->UseVisualStyleBackColor = true;
+			this->CH5_E3_button->Click += gcnew System::EventHandler(this, &Home::CH5_E3_button_Click);
 			// 
 			// CH5_E4_button
 			// 
@@ -479,6 +523,7 @@ namespace PhysicsCalculator {
 			this->CH5_E4_button->TabIndex = 21;
 			this->CH5_E4_button->Text = L"CH5_E4_button";
 			this->CH5_E4_button->UseVisualStyleBackColor = true;
+			this->CH5_E4_button->Click += gcnew System::EventHandler(this, &Home::CH5_E4_button_Click);
 			// 
 			// CH5_E5_button
 			// 
@@ -490,6 +535,7 @@ namespace PhysicsCalculator {
 			this->CH5_E5_button->TabIndex = 22;
 			this->CH5_E5_button->Text = L"CH5_E5_button";
 			this->CH5_E5_button->UseVisualStyleBackColor = true;
+			this->CH5_E5_button->Click += gcnew System::EventHandler(this, &Home::CH5_E5_button_Click);
 			// 
 			// CH5_E6_button
 			// 
@@ -501,6 +547,7 @@ namespace PhysicsCalculator {
 			this->CH5_E6_button->TabIndex = 23;
 			this->CH5_E6_button->Text = L"CH5_E6_button";
 			this->CH5_E6_button->UseVisualStyleBackColor = true;
+			this->CH5_E6_button->Click += gcnew System::EventHandler(this, &Home::CH5_E6_button_Click);
 			// 
 			// CH5_E7_button
 			// 
@@ -512,6 +559,7 @@ namespace PhysicsCalculator {
 			this->CH5_E7_button->TabIndex = 24;
 			this->CH5_E7_button->Text = L"CH5_E7_button";
 			this->CH5_E7_button->UseVisualStyleBackColor = true;
+			this->CH5_E7_button->Click += gcnew System::EventHandler(this, &Home::CH5_E7_button_Click);
 			// 
 			// Topic_label
 			// 
@@ -557,12 +605,11 @@ namespace PhysicsCalculator {
 			this->comboBox1->FormattingEnabled = true;
 			this->comboBox1->IntegralHeight = false;
 			this->comboBox1->ItemHeight = 37;
-			this->comboBox1->Items->AddRange(gcnew cli::array< System::Object^  >(22) {
+			this->comboBox1->Items->AddRange(gcnew cli::array< System::Object^  >(20) {
 				L"(Default)", L"s (Displacement)", L"u (Initial Velocity)",
 					L"v (Final Velocity)", L"a (Acceleration)", L"t (Time)", L"s[x] (Horizontal Displacement)", L"s[y] (Vertical Displacement)",
-					L"f (Frequency)", L"T (Period)", L"R (Radius)", L"F[c] (Centripetal Force)", L"a[c] (Centripetal Acceleration)", L"w (Angular Velocity)",
-					L"L (Rope Lenght)", L"W (Work)", L"F (Force)", L"P (Power)", L"E[k] (Kinetic Energy)", L"E[h] (Potential Energy)", L"k (Spring Constant)",
-					L"x (Spring Stretch/Compression)"
+					L"f (Frequency)", L"T (Period)", L"R (Radius)", L"F[c] (Centripetal Force)", L"a[c] (Centripetal Acceleration)", L"W (Work)",
+					L"F (Force)", L"P (Power)", L"E[k] (Kinetic Energy)", L"E[h] (Potential Energy)", L"k (Spring Constant)", L"x (Spring Stretch/Compression)"
 			});
 			this->comboBox1->Location = System::Drawing::Point(524, 74);
 			this->comboBox1->Name = L"comboBox1";
@@ -595,6 +642,9 @@ namespace PhysicsCalculator {
 			this->Controls->Add(this->Equation_flowLayoutPanel);
 			this->Controls->Add(this->Topic_flowLayoutPanel);
 			this->Controls->Add(this->HomeHeader);
+			this->MaximizeBox = false;
+			this->MaximumSize = System::Drawing::Size(820, 675);
+			this->MinimumSize = System::Drawing::Size(820, 675);
 			this->Name = L"Home";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Home";
@@ -611,6 +661,7 @@ namespace PhysicsCalculator {
 		//โค้ดเริ่มตรงนี้
 
 		int selected_topic = 0;
+		//String tofind;
 
 private: System::Void Chapter1_button_Click(System::Object^ sender, System::EventArgs^ e) {
 	selected_topic = 1;
@@ -860,7 +911,7 @@ private: System::Void reset_button_Click(System::Object^ sender, System::EventAr
 	{Chapter1_button->Enabled = true;
 	Chapter2_button->Enabled = true;
 	Chapter3_button->Enabled = true;
-	Chapter4_button->Enabled = true;
+	//Chapter4_button->Enabled = true;
 	Chapter5_button->Enabled = true; }
 	//set combobox
 	{comboBox1->Items->Clear();
@@ -877,8 +928,8 @@ private: System::Void reset_button_Click(System::Object^ sender, System::EventAr
 	comboBox1->Items->Add("R (Radius)");
 	comboBox1->Items->Add("F[c] (Centripetal Force)");
 	comboBox1->Items->Add("a[c] (Centripetal Acceleration)");
-	comboBox1->Items->Add("w (Angular Velocity)");
-	comboBox1->Items->Add("L (Rope Lenght)");
+	//comboBox1->Items->Add("w (Angular Velocity)");
+	//comboBox1->Items->Add("L (Rope Lenght)");
 	comboBox1->Items->Add("W (Work)");
 	comboBox1->Items->Add("F (Force)");
 	comboBox1->Items->Add("P (Power)");
@@ -905,10 +956,10 @@ private: System::Void reset_button_Click(System::Object^ sender, System::EventAr
 	CH3_E3_button->Visible = true;
 	CH3_E4_button->Visible = true;
 	//ch4
-	CH4_E1_button->Visible = true;
+	/*CH4_E1_button->Visible = true;
 	CH4_E2_button->Visible = true;
 	CH4_E3_button->Visible = true;
-	CH4_E4_button->Visible = true;
+	CH4_E4_button->Visible = true;*/
 	//ch5
 	CH5_E1_button->Visible = true;
 	CH5_E2_button->Visible = true;
@@ -1026,472 +1077,472 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 			CH5_E7_button->Visible = false;
 		}
 		else if (comboBox1->SelectedItem == "a (Acceleration)") {
-		CH1_E1_button->Visible = true;
-		CH1_E2_button->Visible = false;
-		CH1_E3_button->Visible = true;
-		CH1_E4_button->Visible = true;
-		CH1_E5_button->Visible = true;
-		CH1_E6_button->Visible = false;
-		CH2_E1_button->Visible = false;
-		CH2_E2_button->Visible = false;
-		CH2_E3_button->Visible = false;
-		CH3_E1_button->Visible = false;
-		CH3_E2_button->Visible = false;
-		CH3_E3_button->Visible = false;
-		CH3_E4_button->Visible = true;
-		CH4_E1_button->Visible = false;
-		CH4_E2_button->Visible = true;
-		CH4_E3_button->Visible = false;
-		CH4_E4_button->Visible = false;
-		CH5_E1_button->Visible = false;
-		CH5_E2_button->Visible = false;
-		CH5_E3_button->Visible = false;
-		CH5_E4_button->Visible = false;
-		CH5_E5_button->Visible = false;
-		CH5_E6_button->Visible = false;
-		CH5_E7_button->Visible = false;
+			CH1_E1_button->Visible = true;
+			CH1_E2_button->Visible = false;
+			CH1_E3_button->Visible = true;
+			CH1_E4_button->Visible = true;
+			CH1_E5_button->Visible = true;
+			CH1_E6_button->Visible = false;
+			CH2_E1_button->Visible = false;
+			CH2_E2_button->Visible = false;
+			CH2_E3_button->Visible = false;
+			CH3_E1_button->Visible = false;
+			CH3_E2_button->Visible = false;
+			CH3_E3_button->Visible = false;
+			CH3_E4_button->Visible = true;
+			CH4_E1_button->Visible = false;
+			CH4_E2_button->Visible = true;
+			CH4_E3_button->Visible = false;
+			CH4_E4_button->Visible = false;
+			CH5_E1_button->Visible = false;
+			CH5_E2_button->Visible = false;
+			CH5_E3_button->Visible = false;
+			CH5_E4_button->Visible = false;
+			CH5_E5_button->Visible = false;
+			CH5_E6_button->Visible = false;
+			CH5_E7_button->Visible = false;
 		}
 		else if (comboBox1->SelectedItem == "t (Time)") {
-		CH1_E1_button->Visible = true;
-		CH1_E2_button->Visible = true;
-		CH1_E3_button->Visible = true;
-		CH1_E4_button->Visible = true;
-		CH1_E5_button->Visible = false;
-		CH1_E6_button->Visible = true;
-		CH2_E1_button->Visible = true;
-		CH2_E2_button->Visible = false;
-		CH2_E3_button->Visible = false;
-		CH3_E1_button->Visible = false;
-		CH3_E2_button->Visible = false;
-		CH3_E3_button->Visible = false;
-		CH3_E4_button->Visible = false;
-		CH4_E1_button->Visible = false;
-		CH4_E2_button->Visible = false;
-		CH4_E3_button->Visible = false;
-		CH4_E4_button->Visible = false;
-		CH5_E1_button->Visible = false;
-		CH5_E2_button->Visible = true;
-		CH5_E3_button->Visible = false;
-		CH5_E4_button->Visible = false;
-		CH5_E5_button->Visible = false;
-		CH5_E6_button->Visible = false;
-		CH5_E7_button->Visible = false;
+			CH1_E1_button->Visible = true;
+			CH1_E2_button->Visible = true;
+			CH1_E3_button->Visible = true;
+			CH1_E4_button->Visible = true;
+			CH1_E5_button->Visible = false;
+			CH1_E6_button->Visible = true;
+			CH2_E1_button->Visible = true;
+			CH2_E2_button->Visible = false;
+			CH2_E3_button->Visible = false;
+			CH3_E1_button->Visible = false;
+			CH3_E2_button->Visible = false;
+			CH3_E3_button->Visible = false;
+			CH3_E4_button->Visible = false;
+			CH4_E1_button->Visible = false;
+			CH4_E2_button->Visible = false;
+			CH4_E3_button->Visible = false;
+			CH4_E4_button->Visible = false;
+			CH5_E1_button->Visible = false;
+			CH5_E2_button->Visible = true;
+			CH5_E3_button->Visible = false;
+			CH5_E4_button->Visible = false;
+			CH5_E5_button->Visible = false;
+			CH5_E6_button->Visible = false;
+			CH5_E7_button->Visible = false;
 		}
 		else if (comboBox1->SelectedItem == "s[x] (Horizontal Displacement)") {
-		CH1_E1_button->Visible = false;
-		CH1_E2_button->Visible = false;
-		CH1_E3_button->Visible = false;
-		CH1_E4_button->Visible = false;
-		CH1_E5_button->Visible = false;
-		CH1_E6_button->Visible = false;
-		CH2_E1_button->Visible = false;
-		CH2_E2_button->Visible = false;
-		CH2_E3_button->Visible = true;
-		CH3_E1_button->Visible = false;
-		CH3_E2_button->Visible = false;
-		CH3_E3_button->Visible = false;
-		CH3_E4_button->Visible = false;
-		CH4_E1_button->Visible = false;
-		CH4_E2_button->Visible = false;
-		CH4_E3_button->Visible = false;
-		CH4_E4_button->Visible = false;
-		CH5_E1_button->Visible = false;
-		CH5_E2_button->Visible = false;
-		CH5_E3_button->Visible = false;
-		CH5_E4_button->Visible = false;
-		CH5_E5_button->Visible = false;
-		CH5_E6_button->Visible = false;
-		CH5_E7_button->Visible = false;
+			CH1_E1_button->Visible = false;
+			CH1_E2_button->Visible = false;
+			CH1_E3_button->Visible = false;
+			CH1_E4_button->Visible = false;
+			CH1_E5_button->Visible = false;
+			CH1_E6_button->Visible = false;
+			CH2_E1_button->Visible = false;
+			CH2_E2_button->Visible = false;
+			CH2_E3_button->Visible = true;
+			CH3_E1_button->Visible = false;
+			CH3_E2_button->Visible = false;
+			CH3_E3_button->Visible = false;
+			CH3_E4_button->Visible = false;
+			CH4_E1_button->Visible = false;
+			CH4_E2_button->Visible = false;
+			CH4_E3_button->Visible = false;
+			CH4_E4_button->Visible = false;
+			CH5_E1_button->Visible = false;
+			CH5_E2_button->Visible = false;
+			CH5_E3_button->Visible = false;
+			CH5_E4_button->Visible = false;
+			CH5_E5_button->Visible = false;
+			CH5_E6_button->Visible = false;
+			CH5_E7_button->Visible = false;
 		}
 		else if (comboBox1->SelectedItem == "s[y] (Vertical Displacement)") {
-		CH1_E1_button->Visible = false;
-		CH1_E2_button->Visible = false;
-		CH1_E3_button->Visible = false;
-		CH1_E4_button->Visible = false;
-		CH1_E5_button->Visible = false;
-		CH1_E6_button->Visible = false;
-		CH2_E1_button->Visible = false;
-		CH2_E2_button->Visible = true;
-		CH2_E3_button->Visible = false;
-		CH3_E1_button->Visible = false;
-		CH3_E2_button->Visible = false;
-		CH3_E3_button->Visible = false;
-		CH3_E4_button->Visible = false;
-		CH4_E1_button->Visible = false;
-		CH4_E2_button->Visible = false;
-		CH4_E3_button->Visible = false;
-		CH4_E4_button->Visible = false;
-		CH5_E1_button->Visible = false;
-		CH5_E2_button->Visible = false;
-		CH5_E3_button->Visible = false;
-		CH5_E4_button->Visible = false;
-		CH5_E5_button->Visible = false;
-		CH5_E6_button->Visible = false;
-		CH5_E7_button->Visible = false;
+			CH1_E1_button->Visible = false;
+			CH1_E2_button->Visible = false;
+			CH1_E3_button->Visible = false;
+			CH1_E4_button->Visible = false;
+			CH1_E5_button->Visible = false;
+			CH1_E6_button->Visible = false;
+			CH2_E1_button->Visible = false;
+			CH2_E2_button->Visible = true;
+			CH2_E3_button->Visible = false;
+			CH3_E1_button->Visible = false;
+			CH3_E2_button->Visible = false;
+			CH3_E3_button->Visible = false;
+			CH3_E4_button->Visible = false;
+			CH4_E1_button->Visible = false;
+			CH4_E2_button->Visible = false;
+			CH4_E3_button->Visible = false;
+			CH4_E4_button->Visible = false;
+			CH5_E1_button->Visible = false;
+			CH5_E2_button->Visible = false;
+			CH5_E3_button->Visible = false;
+			CH5_E4_button->Visible = false;
+			CH5_E5_button->Visible = false;
+			CH5_E6_button->Visible = false;
+			CH5_E7_button->Visible = false;
 		}
 		else if (comboBox1->SelectedItem == "f (Frequency)") {
-		CH1_E1_button->Visible = false;
-		CH1_E2_button->Visible = false;
-		CH1_E3_button->Visible = false;
-		CH1_E4_button->Visible = false;
-		CH1_E5_button->Visible = false;
-		CH1_E6_button->Visible = false;
-		CH2_E1_button->Visible = false;
-		CH2_E2_button->Visible = false;
-		CH2_E3_button->Visible = false;
-		CH3_E1_button->Visible = false;
-		CH3_E2_button->Visible = false;
-		CH3_E3_button->Visible = false;
-		CH3_E4_button->Visible = false;
-		CH4_E1_button->Visible = false;
-		CH4_E2_button->Visible = false;
-		CH4_E3_button->Visible = false;
-		CH4_E4_button->Visible = true;
-		CH5_E1_button->Visible = false;
-		CH5_E2_button->Visible = false;
-		CH5_E3_button->Visible = false;
-		CH5_E4_button->Visible = false;
-		CH5_E5_button->Visible = false;
-		CH5_E6_button->Visible = false;
-		CH5_E7_button->Visible = false;
+			CH1_E1_button->Visible = false;
+			CH1_E2_button->Visible = false;
+			CH1_E3_button->Visible = false;
+			CH1_E4_button->Visible = false;
+			CH1_E5_button->Visible = false;
+			CH1_E6_button->Visible = false;
+			CH2_E1_button->Visible = false;
+			CH2_E2_button->Visible = false;
+			CH2_E3_button->Visible = false;
+			CH3_E1_button->Visible = false;
+			CH3_E2_button->Visible = false;
+			CH3_E3_button->Visible = false;
+			CH3_E4_button->Visible = false;
+			CH4_E1_button->Visible = false;
+			CH4_E2_button->Visible = false;
+			CH4_E3_button->Visible = false;
+			CH4_E4_button->Visible = true;
+			CH5_E1_button->Visible = false;
+			CH5_E2_button->Visible = false;
+			CH5_E3_button->Visible = false;
+			CH5_E4_button->Visible = false;
+			CH5_E5_button->Visible = false;
+			CH5_E6_button->Visible = false;
+			CH5_E7_button->Visible = false;
 		}
 		else if (comboBox1->SelectedItem == "T (Period)") {
-		CH1_E1_button->Visible = false;
-		CH1_E2_button->Visible = false;
-		CH1_E3_button->Visible = false;
-		CH1_E4_button->Visible = false;
-		CH1_E5_button->Visible = false;
-		CH1_E6_button->Visible = false;
-		CH2_E1_button->Visible = false;
-		CH2_E2_button->Visible = false;
-		CH2_E3_button->Visible = false;
-		CH3_E1_button->Visible = true;
-		CH3_E2_button->Visible = true;
-		CH3_E3_button->Visible = false;
-		CH3_E4_button->Visible = false;
-		CH4_E1_button->Visible = false;
-		CH4_E2_button->Visible = false;
-		CH4_E3_button->Visible = true;
-		CH4_E4_button->Visible = false;
-		CH5_E1_button->Visible = false;
-		CH5_E2_button->Visible = false;
-		CH5_E3_button->Visible = false;
-		CH5_E4_button->Visible = false;
-		CH5_E5_button->Visible = false;
-		CH5_E6_button->Visible = false;
-		CH5_E7_button->Visible = false;
+			CH1_E1_button->Visible = false;
+			CH1_E2_button->Visible = false;
+			CH1_E3_button->Visible = false;
+			CH1_E4_button->Visible = false;
+			CH1_E5_button->Visible = false;
+			CH1_E6_button->Visible = false;
+			CH2_E1_button->Visible = false;
+			CH2_E2_button->Visible = false;
+			CH2_E3_button->Visible = false;
+			CH3_E1_button->Visible = true;
+			CH3_E2_button->Visible = true;
+			CH3_E3_button->Visible = false;
+			CH3_E4_button->Visible = false;
+			CH4_E1_button->Visible = false;
+			CH4_E2_button->Visible = false;
+			CH4_E3_button->Visible = true;
+			CH4_E4_button->Visible = false;
+			CH5_E1_button->Visible = false;
+			CH5_E2_button->Visible = false;
+			CH5_E3_button->Visible = false;
+			CH5_E4_button->Visible = false;
+			CH5_E5_button->Visible = false;
+			CH5_E6_button->Visible = false;
+			CH5_E7_button->Visible = false;
 		}
 		else if (comboBox1->SelectedItem == "R (Radius)") {
-		CH1_E1_button->Visible = false;
-		CH1_E2_button->Visible = false;
-		CH1_E3_button->Visible = false;
-		CH1_E4_button->Visible = false;
-		CH1_E5_button->Visible = false;
-		CH1_E6_button->Visible = false;
-		CH2_E1_button->Visible = false;
-		CH2_E2_button->Visible = false;
-		CH2_E3_button->Visible = false;
-		CH3_E1_button->Visible = false;
-		CH3_E2_button->Visible = true;
-		CH3_E3_button->Visible = true;
-		CH3_E4_button->Visible = true;
-		CH4_E1_button->Visible = false;
-		CH4_E2_button->Visible = false;
-		CH4_E3_button->Visible = false;
-		CH4_E4_button->Visible = false;
-		CH5_E1_button->Visible = false;
-		CH5_E2_button->Visible = false;
-		CH5_E3_button->Visible = false;
-		CH5_E4_button->Visible = false;
-		CH5_E5_button->Visible = false;
-		CH5_E6_button->Visible = false;
-		CH5_E7_button->Visible = false;
+			CH1_E1_button->Visible = false;
+			CH1_E2_button->Visible = false;
+			CH1_E3_button->Visible = false;
+			CH1_E4_button->Visible = false;
+			CH1_E5_button->Visible = false;
+			CH1_E6_button->Visible = false;
+			CH2_E1_button->Visible = false;
+			CH2_E2_button->Visible = false;
+			CH2_E3_button->Visible = false;
+			CH3_E1_button->Visible = false;
+			CH3_E2_button->Visible = true;
+			CH3_E3_button->Visible = true;
+			CH3_E4_button->Visible = true;
+			CH4_E1_button->Visible = false;
+			CH4_E2_button->Visible = false;
+			CH4_E3_button->Visible = false;
+			CH4_E4_button->Visible = false;
+			CH5_E1_button->Visible = false;
+			CH5_E2_button->Visible = false;
+			CH5_E3_button->Visible = false;
+			CH5_E4_button->Visible = false;
+			CH5_E5_button->Visible = false;
+			CH5_E6_button->Visible = false;
+			CH5_E7_button->Visible = false;
 		}
 		else if (comboBox1->SelectedItem == "F[c] (Centripetal Force)") {
-		CH1_E1_button->Visible = false;
-		CH1_E2_button->Visible = false;
-		CH1_E3_button->Visible = false;
-		CH1_E4_button->Visible = false;
-		CH1_E5_button->Visible = false;
-		CH1_E6_button->Visible = false;
-		CH2_E1_button->Visible = false;
-		CH2_E2_button->Visible = false;
-		CH2_E3_button->Visible = false;
-		CH3_E1_button->Visible = false;
-		CH3_E2_button->Visible = false;
-		CH3_E3_button->Visible = true;
-		CH3_E4_button->Visible = false;
-		CH4_E1_button->Visible = false;
-		CH4_E2_button->Visible = false;
-		CH4_E3_button->Visible = false;
-		CH4_E4_button->Visible = false;
-		CH5_E1_button->Visible = false;
-		CH5_E2_button->Visible = false;
-		CH5_E3_button->Visible = false;
-		CH5_E4_button->Visible = false;
-		CH5_E5_button->Visible = false;
-		CH5_E6_button->Visible = false;
-		CH5_E7_button->Visible = false;
+			CH1_E1_button->Visible = false;
+			CH1_E2_button->Visible = false;
+			CH1_E3_button->Visible = false;
+			CH1_E4_button->Visible = false;
+			CH1_E5_button->Visible = false;
+			CH1_E6_button->Visible = false;
+			CH2_E1_button->Visible = false;
+			CH2_E2_button->Visible = false;
+			CH2_E3_button->Visible = false;
+			CH3_E1_button->Visible = false;
+			CH3_E2_button->Visible = false;
+			CH3_E3_button->Visible = true;
+			CH3_E4_button->Visible = false;
+			CH4_E1_button->Visible = false;
+			CH4_E2_button->Visible = false;
+			CH4_E3_button->Visible = false;
+			CH4_E4_button->Visible = false;
+			CH5_E1_button->Visible = false;
+			CH5_E2_button->Visible = false;
+			CH5_E3_button->Visible = false;
+			CH5_E4_button->Visible = false;
+			CH5_E5_button->Visible = false;
+			CH5_E6_button->Visible = false;
+			CH5_E7_button->Visible = false;
 		}
 		else if (comboBox1->SelectedItem == "a[c] (Centripetal Acceleration)") {
-		CH1_E1_button->Visible = false;
-		CH1_E2_button->Visible = false;
-		CH1_E3_button->Visible = false;
-		CH1_E4_button->Visible = false;
-		CH1_E5_button->Visible = false;
-		CH1_E6_button->Visible = false;
-		CH2_E1_button->Visible = false;
-		CH2_E2_button->Visible = false;
-		CH2_E3_button->Visible = false;
-		CH3_E1_button->Visible = false;
-		CH3_E2_button->Visible = false;
-		CH3_E3_button->Visible = false;
-		CH3_E4_button->Visible = true;
-		CH4_E1_button->Visible = false;
-		CH4_E2_button->Visible = false;
-		CH4_E3_button->Visible = false;
-		CH4_E4_button->Visible = false;
-		CH5_E1_button->Visible = false;
-		CH5_E2_button->Visible = false;
-		CH5_E3_button->Visible = false;
-		CH5_E4_button->Visible = false;
-		CH5_E5_button->Visible = false;
-		CH5_E6_button->Visible = false;
-		CH5_E7_button->Visible = false;
+			CH1_E1_button->Visible = false;
+			CH1_E2_button->Visible = false;
+			CH1_E3_button->Visible = false;
+			CH1_E4_button->Visible = false;
+			CH1_E5_button->Visible = false;
+			CH1_E6_button->Visible = false;
+			CH2_E1_button->Visible = false;
+			CH2_E2_button->Visible = false;
+			CH2_E3_button->Visible = false;
+			CH3_E1_button->Visible = false;
+			CH3_E2_button->Visible = false;
+			CH3_E3_button->Visible = false;
+			CH3_E4_button->Visible = true;
+			CH4_E1_button->Visible = false;
+			CH4_E2_button->Visible = false;
+			CH4_E3_button->Visible = false;
+			CH4_E4_button->Visible = false;
+			CH5_E1_button->Visible = false;
+			CH5_E2_button->Visible = false;
+			CH5_E3_button->Visible = false;
+			CH5_E4_button->Visible = false;
+			CH5_E5_button->Visible = false;
+			CH5_E6_button->Visible = false;
+			CH5_E7_button->Visible = false;
 		}
-		else if (comboBox1->SelectedItem == "w (Angular Velocity)") {
-		CH1_E1_button->Visible = false;
-		CH1_E2_button->Visible = false;
-		CH1_E3_button->Visible = false;
-		CH1_E4_button->Visible = false;
-		CH1_E5_button->Visible = false;
-		CH1_E6_button->Visible = false;
-		CH2_E1_button->Visible = false;
-		CH2_E2_button->Visible = false;
-		CH2_E3_button->Visible = false;
-		CH3_E1_button->Visible = false;
-		CH3_E2_button->Visible = false;
-		CH3_E3_button->Visible = false;
-		CH3_E4_button->Visible = false;
-		CH4_E1_button->Visible = true;
-		CH4_E2_button->Visible = true;
-		CH4_E3_button->Visible = true;
-		CH4_E4_button->Visible = false;
-		CH5_E1_button->Visible = false;
-		CH5_E2_button->Visible = false;
-		CH5_E3_button->Visible = false;
-		CH5_E4_button->Visible = false;
-		CH5_E5_button->Visible = false;
-		CH5_E6_button->Visible = false;
-		CH5_E7_button->Visible = false;
-		}
-		else if (comboBox1->SelectedItem == "L (Rope Lenght)") {
-		CH1_E1_button->Visible = false;
-		CH1_E2_button->Visible = false;
-		CH1_E3_button->Visible = false;
-		CH1_E4_button->Visible = false;
-		CH1_E5_button->Visible = false;
-		CH1_E6_button->Visible = false;
-		CH2_E1_button->Visible = false;
-		CH2_E2_button->Visible = false;
-		CH2_E3_button->Visible = false;
-		CH3_E1_button->Visible = false;
-		CH3_E2_button->Visible = false;
-		CH3_E3_button->Visible = false;
-		CH3_E4_button->Visible = false;
-		CH4_E1_button->Visible = false;
-		CH4_E2_button->Visible = false;
-		CH4_E3_button->Visible = true;
-		CH4_E4_button->Visible = true;
-		CH5_E1_button->Visible = false;
-		CH5_E2_button->Visible = false;
-		CH5_E3_button->Visible = false;
-		CH5_E4_button->Visible = false;
-		CH5_E5_button->Visible = false;
-		CH5_E6_button->Visible = false;
-		CH5_E7_button->Visible = false;
-		}
+		/*else if (comboBox1->SelectedItem == "w (Angular Velocity)") {
+			CH1_E1_button->Visible = false;
+			CH1_E2_button->Visible = false;
+			CH1_E3_button->Visible = false;
+			CH1_E4_button->Visible = false;
+			CH1_E5_button->Visible = false;
+			CH1_E6_button->Visible = false;
+			CH2_E1_button->Visible = false;
+			CH2_E2_button->Visible = false;
+			CH2_E3_button->Visible = false;
+			CH3_E1_button->Visible = false;
+			CH3_E2_button->Visible = false;
+			CH3_E3_button->Visible = false;
+			CH3_E4_button->Visible = false;
+			CH4_E1_button->Visible = true;
+			CH4_E2_button->Visible = true;
+			CH4_E3_button->Visible = true;
+			CH4_E4_button->Visible = false;
+			CH5_E1_button->Visible = false;
+			CH5_E2_button->Visible = false;
+			CH5_E3_button->Visible = false;
+			CH5_E4_button->Visible = false;
+			CH5_E5_button->Visible = false;
+			CH5_E6_button->Visible = false;
+			CH5_E7_button->Visible = false;
+		}*/
+		/*else if (comboBox1->SelectedItem == "L (Rope Lenght)") {
+			CH1_E1_button->Visible = false;
+			CH1_E2_button->Visible = false;
+			CH1_E3_button->Visible = false;
+			CH1_E4_button->Visible = false;
+			CH1_E5_button->Visible = false;
+			CH1_E6_button->Visible = false;
+			CH2_E1_button->Visible = false;
+			CH2_E2_button->Visible = false;
+			CH2_E3_button->Visible = false;
+			CH3_E1_button->Visible = false;
+			CH3_E2_button->Visible = false;
+			CH3_E3_button->Visible = false;
+			CH3_E4_button->Visible = false;
+			CH4_E1_button->Visible = false;
+			CH4_E2_button->Visible = false;
+			CH4_E3_button->Visible = true;
+			CH4_E4_button->Visible = true;
+			CH5_E1_button->Visible = false;
+			CH5_E2_button->Visible = false;
+			CH5_E3_button->Visible = false;
+			CH5_E4_button->Visible = false;
+			CH5_E5_button->Visible = false;
+			CH5_E6_button->Visible = false;
+			CH5_E7_button->Visible = false;
+		}*/
 		else if (comboBox1->SelectedItem == "W (Work)") {
-		CH1_E1_button->Visible = false;
-		CH1_E2_button->Visible = false;
-		CH1_E3_button->Visible = false;
-		CH1_E4_button->Visible = false;
-		CH1_E5_button->Visible = false;
-		CH1_E6_button->Visible = false;
-		CH2_E1_button->Visible = false;
-		CH2_E2_button->Visible = false;
-		CH2_E3_button->Visible = false;
-		CH3_E1_button->Visible = false;
-		CH3_E2_button->Visible = false;
-		CH3_E3_button->Visible = false;
-		CH3_E4_button->Visible = false;
-		CH4_E1_button->Visible = false;
-		CH4_E2_button->Visible = false;
-		CH4_E3_button->Visible = false;
-		CH4_E4_button->Visible = false;
-		CH5_E1_button->Visible = true;
-		CH5_E2_button->Visible = true;
-		CH5_E3_button->Visible = false;
-		CH5_E4_button->Visible = false;
-		CH5_E5_button->Visible = false;
-		CH5_E6_button->Visible = false;
-		CH5_E7_button->Visible = false;
+			CH1_E1_button->Visible = false;
+			CH1_E2_button->Visible = false;
+			CH1_E3_button->Visible = false;
+			CH1_E4_button->Visible = false;
+			CH1_E5_button->Visible = false;
+			CH1_E6_button->Visible = false;
+			CH2_E1_button->Visible = false;
+			CH2_E2_button->Visible = false;
+			CH2_E3_button->Visible = false;
+			CH3_E1_button->Visible = false;
+			CH3_E2_button->Visible = false;
+			CH3_E3_button->Visible = false;
+			CH3_E4_button->Visible = false;
+			CH4_E1_button->Visible = false;
+			CH4_E2_button->Visible = false;
+			CH4_E3_button->Visible = false;
+			CH4_E4_button->Visible = false;
+			CH5_E1_button->Visible = true;
+			CH5_E2_button->Visible = true;
+			CH5_E3_button->Visible = false;
+			CH5_E4_button->Visible = false;
+			CH5_E5_button->Visible = false;
+			CH5_E6_button->Visible = false;
+			CH5_E7_button->Visible = false;
 		}
 		else if (comboBox1->SelectedItem == "F (Force)") {
-		CH1_E1_button->Visible = false;
-		CH1_E2_button->Visible = false;
-		CH1_E3_button->Visible = false;
-		CH1_E4_button->Visible = false;
-		CH1_E5_button->Visible = false;
-		CH1_E6_button->Visible = false;
-		CH2_E1_button->Visible = false;
-		CH2_E2_button->Visible = false;
-		CH2_E3_button->Visible = false;
-		CH3_E1_button->Visible = false;
-		CH3_E2_button->Visible = false;
-		CH3_E3_button->Visible = false;
-		CH3_E4_button->Visible = false;
-		CH4_E1_button->Visible = false;
-		CH4_E2_button->Visible = false;
-		CH4_E3_button->Visible = false;
-		CH4_E4_button->Visible = false;
-		CH5_E1_button->Visible = true;
-		CH5_E2_button->Visible = false;
-		CH5_E3_button->Visible = true;
-		CH5_E4_button->Visible = false;
-		CH5_E5_button->Visible = false;
-		CH5_E6_button->Visible = false;
-		CH5_E7_button->Visible = true;
+			CH1_E1_button->Visible = false;
+			CH1_E2_button->Visible = false;
+			CH1_E3_button->Visible = false;
+			CH1_E4_button->Visible = false;
+			CH1_E5_button->Visible = false;
+			CH1_E6_button->Visible = false;
+			CH2_E1_button->Visible = false;
+			CH2_E2_button->Visible = false;
+			CH2_E3_button->Visible = false;
+			CH3_E1_button->Visible = false;
+			CH3_E2_button->Visible = false;
+			CH3_E3_button->Visible = false;
+			CH3_E4_button->Visible = false;
+			CH4_E1_button->Visible = false;
+			CH4_E2_button->Visible = false;
+			CH4_E3_button->Visible = false;
+			CH4_E4_button->Visible = false;
+			CH5_E1_button->Visible = true;
+			CH5_E2_button->Visible = false;
+			CH5_E3_button->Visible = true;
+			CH5_E4_button->Visible = false;
+			CH5_E5_button->Visible = false;
+			CH5_E6_button->Visible = false;
+			CH5_E7_button->Visible = true;
 		}
 		else if (comboBox1->SelectedItem == "P (Power)") {
-		CH1_E1_button->Visible = false;
-		CH1_E2_button->Visible = false;
-		CH1_E3_button->Visible = false;
-		CH1_E4_button->Visible = false;
-		CH1_E5_button->Visible = false;
-		CH1_E6_button->Visible = false;
-		CH2_E1_button->Visible = false;
-		CH2_E2_button->Visible = false;
-		CH2_E3_button->Visible = false;
-		CH3_E1_button->Visible = false;
-		CH3_E2_button->Visible = false;
-		CH3_E3_button->Visible = false;
-		CH3_E4_button->Visible = false;
-		CH4_E1_button->Visible = false;
-		CH4_E2_button->Visible = false;
-		CH4_E3_button->Visible = false;
-		CH4_E4_button->Visible = false;
-		CH5_E1_button->Visible = false;
-		CH5_E2_button->Visible = true;
-		CH5_E3_button->Visible = true;
-		CH5_E4_button->Visible = false;
-		CH5_E5_button->Visible = false;
-		CH5_E6_button->Visible = false;
-		CH5_E7_button->Visible = false;
+			CH1_E1_button->Visible = false;
+			CH1_E2_button->Visible = false;
+			CH1_E3_button->Visible = false;
+			CH1_E4_button->Visible = false;
+			CH1_E5_button->Visible = false;
+			CH1_E6_button->Visible = false;
+			CH2_E1_button->Visible = false;
+			CH2_E2_button->Visible = false;
+			CH2_E3_button->Visible = false;
+			CH3_E1_button->Visible = false;
+			CH3_E2_button->Visible = false;
+			CH3_E3_button->Visible = false;
+			CH3_E4_button->Visible = false;
+			CH4_E1_button->Visible = false;
+			CH4_E2_button->Visible = false;
+			CH4_E3_button->Visible = false;
+			CH4_E4_button->Visible = false;
+			CH5_E1_button->Visible = false;
+			CH5_E2_button->Visible = true;
+			CH5_E3_button->Visible = true;
+			CH5_E4_button->Visible = false;
+			CH5_E5_button->Visible = false;
+			CH5_E6_button->Visible = false;
+			CH5_E7_button->Visible = false;
 		}
 		else if (comboBox1->SelectedItem == "E[k] (Kinetic Energy)") {
-		CH1_E1_button->Visible = false;
-		CH1_E2_button->Visible = false;
-		CH1_E3_button->Visible = false;
-		CH1_E4_button->Visible = false;
-		CH1_E5_button->Visible = false;
-		CH1_E6_button->Visible = false;
-		CH2_E1_button->Visible = false;
-		CH2_E2_button->Visible = false;
-		CH2_E3_button->Visible = false;
-		CH3_E1_button->Visible = false;
-		CH3_E2_button->Visible = false;
-		CH3_E3_button->Visible = false;
-		CH3_E4_button->Visible = false;
-		CH4_E1_button->Visible = false;
-		CH4_E2_button->Visible = false;
-		CH4_E3_button->Visible = false;
-		CH4_E4_button->Visible = false;
-		CH5_E1_button->Visible = false;
-		CH5_E2_button->Visible = false;
-		CH5_E3_button->Visible = false;
-		CH5_E4_button->Visible = true;
-		CH5_E5_button->Visible = false;
-		CH5_E6_button->Visible = false;
-		CH5_E7_button->Visible = false;
+			CH1_E1_button->Visible = false;
+			CH1_E2_button->Visible = false;
+			CH1_E3_button->Visible = false;
+			CH1_E4_button->Visible = false;
+			CH1_E5_button->Visible = false;
+			CH1_E6_button->Visible = false;
+			CH2_E1_button->Visible = false;
+			CH2_E2_button->Visible = false;
+			CH2_E3_button->Visible = false;
+			CH3_E1_button->Visible = false;
+			CH3_E2_button->Visible = false;
+			CH3_E3_button->Visible = false;
+			CH3_E4_button->Visible = false;
+			CH4_E1_button->Visible = false;
+			CH4_E2_button->Visible = false;
+			CH4_E3_button->Visible = false;
+			CH4_E4_button->Visible = false;
+			CH5_E1_button->Visible = false;
+			CH5_E2_button->Visible = false;
+			CH5_E3_button->Visible = false;
+			CH5_E4_button->Visible = true;
+			CH5_E5_button->Visible = false;
+			CH5_E6_button->Visible = false;
+			CH5_E7_button->Visible = false;
 		}
 		else if (comboBox1->SelectedItem == "E[h] (Potential Energy)") {
-		CH1_E1_button->Visible = false;
-		CH1_E2_button->Visible = false;
-		CH1_E3_button->Visible = false;
-		CH1_E4_button->Visible = false;
-		CH1_E5_button->Visible = false;
-		CH1_E6_button->Visible = false;
-		CH2_E1_button->Visible = false;
-		CH2_E2_button->Visible = false;
-		CH2_E3_button->Visible = false;
-		CH3_E1_button->Visible = false;
-		CH3_E2_button->Visible = false;
-		CH3_E3_button->Visible = false;
-		CH3_E4_button->Visible = false;
-		CH4_E1_button->Visible = false;
-		CH4_E2_button->Visible = false;
-		CH4_E3_button->Visible = false;
-		CH4_E4_button->Visible = false;
-		CH5_E1_button->Visible = false;
-		CH5_E2_button->Visible = false;
-		CH5_E3_button->Visible = false;
-		CH5_E4_button->Visible = false;
-		CH5_E5_button->Visible = true;
-		CH5_E6_button->Visible = true;
-		CH5_E7_button->Visible = false;
+			CH1_E1_button->Visible = false;
+			CH1_E2_button->Visible = false;
+			CH1_E3_button->Visible = false;
+			CH1_E4_button->Visible = false;
+			CH1_E5_button->Visible = false;
+			CH1_E6_button->Visible = false;
+			CH2_E1_button->Visible = false;
+			CH2_E2_button->Visible = false;
+			CH2_E3_button->Visible = false;
+			CH3_E1_button->Visible = false;
+			CH3_E2_button->Visible = false;
+			CH3_E3_button->Visible = false;
+			CH3_E4_button->Visible = false;
+			CH4_E1_button->Visible = false;
+			CH4_E2_button->Visible = false;
+			CH4_E3_button->Visible = false;
+			CH4_E4_button->Visible = false;
+			CH5_E1_button->Visible = false;
+			CH5_E2_button->Visible = false;
+			CH5_E3_button->Visible = false;
+			CH5_E4_button->Visible = false;
+			CH5_E5_button->Visible = true;
+			CH5_E6_button->Visible = true;
+			CH5_E7_button->Visible = false;
 		}
 		else if (comboBox1->SelectedItem == "k (Spring Constant)") {
-		CH1_E1_button->Visible = false;
-		CH1_E2_button->Visible = false;
-		CH1_E3_button->Visible = false;
-		CH1_E4_button->Visible = false;
-		CH1_E5_button->Visible = false;
-		CH1_E6_button->Visible = false;
-		CH2_E1_button->Visible = false;
-		CH2_E2_button->Visible = false;
-		CH2_E3_button->Visible = false;
-		CH3_E1_button->Visible = false;
-		CH3_E2_button->Visible = false;
-		CH3_E3_button->Visible = false;
-		CH3_E4_button->Visible = false;
-		CH4_E1_button->Visible = false;
-		CH4_E2_button->Visible = false;
-		CH4_E3_button->Visible = false;
-		CH4_E4_button->Visible = false;
-		CH5_E1_button->Visible = false;
-		CH5_E2_button->Visible = false;
-		CH5_E3_button->Visible = false;
-		CH5_E4_button->Visible = false;
-		CH5_E5_button->Visible = false;
-		CH5_E6_button->Visible = true;
-		CH5_E7_button->Visible = true;
+			CH1_E1_button->Visible = false;
+			CH1_E2_button->Visible = false;
+			CH1_E3_button->Visible = false;
+			CH1_E4_button->Visible = false;
+			CH1_E5_button->Visible = false;
+			CH1_E6_button->Visible = false;
+			CH2_E1_button->Visible = false;
+			CH2_E2_button->Visible = false;
+			CH2_E3_button->Visible = false;
+			CH3_E1_button->Visible = false;
+			CH3_E2_button->Visible = false;
+			CH3_E3_button->Visible = false;
+			CH3_E4_button->Visible = false;
+			CH4_E1_button->Visible = false;
+			CH4_E2_button->Visible = false;
+			CH4_E3_button->Visible = false;
+			CH4_E4_button->Visible = false;
+			CH5_E1_button->Visible = false;
+			CH5_E2_button->Visible = false;
+			CH5_E3_button->Visible = false;
+			CH5_E4_button->Visible = false;
+			CH5_E5_button->Visible = false;
+			CH5_E6_button->Visible = true;
+			CH5_E7_button->Visible = true;
 		}
 		else if (comboBox1->SelectedItem == "x (Spring Stretch/Compression)") {
-		CH1_E1_button->Visible = false;
-		CH1_E2_button->Visible = false;
-		CH1_E3_button->Visible = false;
-		CH1_E4_button->Visible = false;
-		CH1_E5_button->Visible = false;
-		CH1_E6_button->Visible = false;
-		CH2_E1_button->Visible = false;
-		CH2_E2_button->Visible = false;
-		CH2_E3_button->Visible = false;
-		CH3_E1_button->Visible = false;
-		CH3_E2_button->Visible = false;
-		CH3_E3_button->Visible = false;
-		CH3_E4_button->Visible = false;
-		CH4_E1_button->Visible = false;
-		CH4_E2_button->Visible = false;
-		CH4_E3_button->Visible = false;
-		CH4_E4_button->Visible = false;
-		CH5_E1_button->Visible = false;
-		CH5_E2_button->Visible = false;
-		CH5_E3_button->Visible = false;
-		CH5_E4_button->Visible = false;
-		CH5_E5_button->Visible = false;
-		CH5_E6_button->Visible = true;
-		CH5_E7_button->Visible = true;
+			CH1_E1_button->Visible = false;
+			CH1_E2_button->Visible = false;
+			CH1_E3_button->Visible = false;
+			CH1_E4_button->Visible = false;
+			CH1_E5_button->Visible = false;
+			CH1_E6_button->Visible = false;
+			CH2_E1_button->Visible = false;
+			CH2_E2_button->Visible = false;
+			CH2_E3_button->Visible = false;
+			CH3_E1_button->Visible = false;
+			CH3_E2_button->Visible = false;
+			CH3_E3_button->Visible = false;
+			CH3_E4_button->Visible = false;
+			CH4_E1_button->Visible = false;
+			CH4_E2_button->Visible = false;
+			CH4_E3_button->Visible = false;
+			CH4_E4_button->Visible = false;
+			CH5_E1_button->Visible = false;
+			CH5_E2_button->Visible = false;
+			CH5_E3_button->Visible = false;
+			CH5_E4_button->Visible = false;
+			CH5_E5_button->Visible = false;
+			CH5_E6_button->Visible = true;
+			CH5_E7_button->Visible = true;
 		}
 	}
 	//set topic1
@@ -1620,7 +1671,7 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 		}
 	}
 	//set topic4
-	if (selected_topic == 4) {
+	/*if (selected_topic == 4) {
 		if (comboBox1->SelectedItem == "(Default)") {
 			CH3_E1_button->Visible = true;
 			CH4_E1_button->Visible = true;
@@ -1670,7 +1721,7 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 			CH4_E3_button->Visible = true;
 			CH4_E4_button->Visible = true;
 		}
-	}
+	}*/
 	//set topic5
 	if (selected_topic == 5) {
 		if (comboBox1->SelectedItem == "(Default)") {
@@ -1761,7 +1812,7 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 			CH5_E4_button->Visible = false;
 			CH5_E5_button->Visible = false;
 			CH5_E6_button->Visible = true;
-			CH5_E7_button->Visible = false;
+			CH5_E7_button->Visible = true;
 		}
 		else if (comboBox1->SelectedItem == "x (Spring stretch/compression)") {
 			CH5_E1_button->Visible = false;
@@ -1775,9 +1826,84 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 	}
 }
 private: System::Void CH1_E1_button_Click(System::Object^ sender, System::EventArgs^ e) {
-	CH1_E1 obj;
-	//this->Hide();
-	obj.ShowDialog();
+	CH1_E1 ch1e1;
+	ch1e1.ShowDialog();
+}
+private: System::Void CH1_E2_button_Click(System::Object^ sender, System::EventArgs^ e) {
+	CH1_E2 ch1e2;
+	ch1e2.ShowDialog();
+}
+private: System::Void CH1_E3_button_Click(System::Object^ sender, System::EventArgs^ e) {
+	CH1_E3 ch1e3;
+	ch1e3.ShowDialog();
+}
+private: System::Void CH1_E4_button_Click(System::Object^ sender, System::EventArgs^ e) {
+	CH1_E4 ch1e4;
+	ch1e4.ShowDialog();
+}
+private: System::Void CH1_E5_button_Click(System::Object^ sender, System::EventArgs^ e) {
+	CH1_E5 ch1e5;
+	ch1e5.ShowDialog();
+}
+private: System::Void CH1_E6_button_Click(System::Object^ sender, System::EventArgs^ e) {
+	CH1_E6 ch1e6;
+	ch1e6.ShowDialog();
+}
+private: System::Void CH2_E1_button_Click(System::Object^ sender, System::EventArgs^ e) {
+	CH2_E1 ch2e1;
+	ch2e1.ShowDialog();
+}
+private: System::Void CH2_E2_button_Click(System::Object^ sender, System::EventArgs^ e) {
+	CH2_E2 ch2e2;
+	ch2e2.ShowDialog();
+}
+private: System::Void CH2_E3_button_Click(System::Object^ sender, System::EventArgs^ e) {
+	CH2_E3 ch2e3;
+	ch2e3.ShowDialog();
+}
+private: System::Void CH3_E1_button_Click(System::Object^ sender, System::EventArgs^ e) {
+	CH3_E1 ch3e1;
+	ch3e1.ShowDialog();
+}
+private: System::Void CH3_E2_button_Click(System::Object^ sender, System::EventArgs^ e) {
+	CH3_E2 ch3e2;
+	ch3e2.ShowDialog();
+}
+private: System::Void CH3_E3_button_Click(System::Object^ sender, System::EventArgs^ e) {
+	CH3_E3 ch3e3;
+	ch3e3.ShowDialog();
+}
+private: System::Void CH3_E4_button_Click(System::Object^ sender, System::EventArgs^ e) {
+	CH3_E4 ch3e4;
+	ch3e4.ShowDialog();
+}
+private: System::Void CH5_E1_button_Click(System::Object^ sender, System::EventArgs^ e) {
+	CH5_E1 ch5e1;
+	ch5e1.ShowDialog();
+}
+private: System::Void CH5_E2_button_Click(System::Object^ sender, System::EventArgs^ e) {
+	CH5_E2 ch5e2;
+	ch5e2.ShowDialog();
+}
+private: System::Void CH5_E3_button_Click(System::Object^ sender, System::EventArgs^ e) {
+	CH5_E3 ch5e3;
+	ch5e3.ShowDialog();
+}
+private: System::Void CH5_E4_button_Click(System::Object^ sender, System::EventArgs^ e) {
+	CH5_E4 ch5e4;
+	ch5e4.ShowDialog();
+}
+private: System::Void CH5_E5_button_Click(System::Object^ sender, System::EventArgs^ e) {
+	CH5_E5 ch5e5;
+	ch5e5.ShowDialog();
+}
+private: System::Void CH5_E6_button_Click(System::Object^ sender, System::EventArgs^ e) {
+	CH5_E6 ch5e6;
+	ch5e6.ShowDialog();
+}
+private: System::Void CH5_E7_button_Click(System::Object^ sender, System::EventArgs^ e) {
+	CH5_E7 ch5e7;
+	ch5e7.ShowDialog();
 }
 };
 }
