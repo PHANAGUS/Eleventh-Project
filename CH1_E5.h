@@ -586,25 +586,25 @@ public:
 			u = System::Convert::ToDouble(u_textBox->Text); if (u_comboBox->SelectedItem == "km/h") u *= (1000.0000 / 3600.0000);
 			a = System::Convert::ToDouble(a_textBox->Text);
 			s = System::Convert::ToDouble(s_textBox->Text); if (s_comboBox->SelectedItem == "km") s *= 1000.0000;
-			ans = ;
+			ans = sqrt((u*u)+(2*a*s));
 		}
 		else if (find == 'u') {
 			v = System::Convert::ToDouble(v_textBox->Text); if (v_comboBox->SelectedItem == "km/h") v *= (1000.0000 / 3600.0000);
 			a = System::Convert::ToDouble(a_textBox->Text);
 			s = System::Convert::ToDouble(s_textBox->Text); if (s_comboBox->SelectedItem == "km") s *= 1000.0000;
-			ans = ;
+			ans = sqrt((v*v)-(2*a*s));
 		}
 		else if (find == 'a') {
 			u = System::Convert::ToDouble(u_textBox->Text); if (u_comboBox->SelectedItem == "km/h") u *= (1000.0000 / 3600.0000);
 			v = System::Convert::ToDouble(v_textBox->Text); if (v_comboBox->SelectedItem == "km/h") v *= (1000.0000 / 3600.0000);
 			s = System::Convert::ToDouble(s_textBox->Text); if (s_comboBox->SelectedItem == "km") s *= 1000.0000;
-			ans = ;
+			ans = (pow(v,2)-pow(u,2))/(2*s);
 		}
 		else {//หา s
 			u = System::Convert::ToDouble(u_textBox->Text); if (u_comboBox->SelectedItem == "km/h") u *= (1000.0000 / 3600.0000);
 			a = System::Convert::ToDouble(a_textBox->Text);
 			v = System::Convert::ToDouble(v_textBox->Text); if (v_comboBox->SelectedItem == "km/h") v *= (1000.0000 / 3600.0000);
-			ans = ;
+			ans = (pow(v,2)-pow(u,2))/(2*a);
 		}
 	}
 
