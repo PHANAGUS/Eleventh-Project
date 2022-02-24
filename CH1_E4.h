@@ -590,27 +590,27 @@ public:
 			a = System::Convert::ToDouble(a_textBox->Text); if (a_comboBox->SelectedItem == "km/h")
 			t = System::Convert::ToDouble(t_textBox->Text); if (t_comboBox->SelectedItem == "min") t *= 60;
 															else if (t_comboBox->SelectedItem == "h") t *= 3600;
-			ans = ;
+			ans = (v*t)-(0.5*a*pow(t,2));
 		}
-		else if (find == 'u') {
+		else if (find == 'v') {
 			s = System::Convert::ToDouble(s_textBox->Text); if (s_comboBox->SelectedItem == "km") s *= 1000.0000;
 			a = System::Convert::ToDouble(a_textBox->Text); if (a_comboBox->SelectedItem == "km/h")
 			t = System::Convert::ToDouble(t_textBox->Text);	if (t_comboBox->SelectedItem == "min") t *= 60;
 															else if (t_comboBox->SelectedItem == "h") t *= 3600;
-			ans = ;
+			ans = (s-((1/2)*a*t*t))/t;
 		}
 		else if (find == 'a') {
 			s = System::Convert::ToDouble(s_textBox->Text); if (s_comboBox->SelectedItem == "km") s *= 1000.0000;
 			v = System::Convert::ToDouble(v_textBox->Text); if (v_comboBox->SelectedItem == "km/h") v *= (1000.0000 / 3600.0000);
 			t = System::Convert::ToDouble(t_textBox->Text); if (t_comboBox->SelectedItem == "min") t *= 60;
 															else if (t_comboBox->SelectedItem == "h") t *= 3600;
-			ans = ;
+			ans = (s-(v*t)+(0.5))/pow(t,2);
 		}
 		else {//หา t
 			s = System::Convert::ToDouble(s_textBox->Text); if (s_comboBox->SelectedItem == "km") s *= 1000.0000;
 			v = System::Convert::ToDouble(v_textBox->Text); if (v_comboBox->SelectedItem == "km/h") v *= (1000.0000 / 3600.0000);
 			a = System::Convert::ToDouble(a_textBox->Text); if (a_comboBox->SelectedItem == "km/h")
-				ans = ;
+				ans = ((v+sqrt((v*v)+(s*a*s)))/a) << " and " << ((v-sqrt((v*v)+(s*a*s)))/a);
 		}
 	}
 
