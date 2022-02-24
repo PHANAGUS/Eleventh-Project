@@ -499,18 +499,18 @@ public:
 			s = System::Convert::ToDouble(s_textBox->Text); if (s_comboBox->SelectedItem == "km") s *= 1000.0000;
 			t = System::Convert::ToDouble(t_textBox->Text); if (t_comboBox->SelectedItem == "min") t *= 60;
 															else if (t_comboBox->SelectedItem == "h") t *= 3600;
-			ans = ;
+			ans = s/t;
 		}
 		else if (find == 's') {
 			v = System::Convert::ToDouble(v_textBox->Text); if (v_comboBox->SelectedItem == "km/h") v *= (1000.0000 / 3600.0000);
 			t = System::Convert::ToDouble(t_textBox->Text);	if (t_comboBox->SelectedItem == "min") t *= 60;
 															else if (t_comboBox->SelectedItem == "h") t *= 3600;
-			ans = ;
+			ans = v*t;
 		}
 		else {//หา t
 			v = System::Convert::ToDouble(v_textBox->Text); if (v_comboBox->SelectedItem == "km/h") v *= (1000.0000 / 3600.0000);
 			s = System::Convert::ToDouble(s_textBox->Text); if (s_comboBox->SelectedItem == "km") s *= 1000.0000;
-			ans = ;
+			ans = s/v;
 		}
 	}
 
