@@ -63,6 +63,7 @@ namespace PhysicsCalculator {
 	private: System::Windows::Forms::Label^ Find_label;
 	private: System::Windows::Forms::ComboBox^ E_comboBox;
 	private: System::Windows::Forms::ComboBox^ m_comboBox;
+	private: System::Windows::Forms::PictureBox^ pictureBox1;
 
 
 	private:
@@ -99,6 +100,8 @@ namespace PhysicsCalculator {
 			this->Find_label = (gcnew System::Windows::Forms::Label());
 			this->E_comboBox = (gcnew System::Windows::Forms::ComboBox());
 			this->m_comboBox = (gcnew System::Windows::Forms::ComboBox());
+			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// E_textBox
@@ -369,6 +372,16 @@ namespace PhysicsCalculator {
 			this->m_comboBox->TabIndex = 184;
 			this->m_comboBox->Visible = false;
 			// 
+			// pictureBox1
+			// 
+			this->pictureBox1->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
+			this->pictureBox1->Location = System::Drawing::Point(160, 84);
+			this->pictureBox1->Name = L"pictureBox1";
+			this->pictureBox1->Size = System::Drawing::Size(468, 76);
+			this->pictureBox1->TabIndex = 191;
+			this->pictureBox1->TabStop = false;
+			// 
 			// CH5_E4
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -376,6 +389,7 @@ namespace PhysicsCalculator {
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(804, 636);
+			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->E_textBox);
 			this->Controls->Add(this->E_label);
 			this->Controls->Add(this->convert_button);
@@ -402,6 +416,7 @@ namespace PhysicsCalculator {
 			this->Name = L"CH5_E4";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterParent;
 			this->Text = L"CH5_E4";
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 

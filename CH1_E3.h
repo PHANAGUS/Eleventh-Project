@@ -63,6 +63,7 @@ namespace PhysicsCalculator {
 	private: System::Windows::Forms::Label^ a_label;
 	private: System::Windows::Forms::Label^ label4;
 	private: System::Windows::Forms::Label^ ans2_label;
+	private: System::Windows::Forms::PictureBox^ pictureBox1;
 
 	private:
 		/// <summary>
@@ -103,6 +104,8 @@ namespace PhysicsCalculator {
 			this->a_label = (gcnew System::Windows::Forms::Label());
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->ans2_label = (gcnew System::Windows::Forms::Label());
+			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// convert_button
@@ -279,7 +282,7 @@ namespace PhysicsCalculator {
 				static_cast<System::Byte>(0)));
 			this->ans_label->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(192)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
 				static_cast<System::Int32>(static_cast<System::Byte>(0)));
-			this->ans_label->Location = System::Drawing::Point(140, 578);
+			this->ans_label->Location = System::Drawing::Point(152, 578);
 			this->ans_label->Name = L"ans_label";
 			this->ans_label->Size = System::Drawing::Size(35, 38);
 			this->ans_label->TabIndex = 44;
@@ -444,6 +447,16 @@ namespace PhysicsCalculator {
 			this->ans2_label->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			this->ans2_label->Visible = false;
 			// 
+			// pictureBox1
+			// 
+			this->pictureBox1->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
+			this->pictureBox1->Location = System::Drawing::Point(167, 79);
+			this->pictureBox1->Name = L"pictureBox1";
+			this->pictureBox1->Size = System::Drawing::Size(468, 76);
+			this->pictureBox1->TabIndex = 63;
+			this->pictureBox1->TabStop = false;
+			// 
 			// CH1_E3
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -451,6 +464,7 @@ namespace PhysicsCalculator {
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(804, 636);
+			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->a_comboBox);
 			this->Controls->Add(this->a_textBox);
 			this->Controls->Add(this->a_label);
@@ -482,6 +496,7 @@ namespace PhysicsCalculator {
 			this->Name = L"CH1_E3";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterParent;
 			this->Text = L"CH1_E3";
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -652,6 +667,7 @@ public:
 			else{
 				ans = ((-u) + sqrt(u * u + 2 * a * s)) / a;
 				ans2 = ((-u) - sqrt(u * u + 2 * a * s)) / a;
+				ans_label2->Text = "t =";
 			}
 		}
 	}
@@ -777,7 +793,12 @@ private: System::Void cal_button_Click(System::Object^ sender, System::EventArgs
 	}
 	else {
 		cal(find);
-		if(ans_label2->Text != "Error"){
+		if(ans_label2->Text == "Error"){
+			ans_label->Visible = 0;
+			ans2_label->Visible = 0;
+			label4->Visible = 0;
+		}
+		else {
 			if (find == 's') {
 				set_ans_combobox('s');
 				ans_combo->SelectedIndex = 0;
@@ -820,6 +841,7 @@ private: System::Void reset_button_Click(System::Object^ sender, System::EventAr
 private: System::Void convert_button_Click(System::Object^ sender, System::EventArgs^ e) {
 	convert_ans();
 	ans_label->Text = System::Convert::ToString(ans);
+	ans2_label->Text = System::Convert::ToString(ans2);
 	convert_button->Enabled = 0;
 }
 private: System::Void ans_combo_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {

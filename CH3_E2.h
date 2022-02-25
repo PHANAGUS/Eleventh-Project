@@ -71,6 +71,7 @@ namespace PhysicsCalculator {
 	private: System::Windows::Forms::Label^ T_u_label;
 	private: System::Windows::Forms::Button^ f_button;
 	private: System::Windows::Forms::Button^ T_button;
+	private: System::Windows::Forms::PictureBox^ pictureBox1;
 
 
 	private:
@@ -110,6 +111,8 @@ namespace PhysicsCalculator {
 			this->T_u_label = (gcnew System::Windows::Forms::Label());
 			this->f_button = (gcnew System::Windows::Forms::Button());
 			this->T_button = (gcnew System::Windows::Forms::Button());
+			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// v_comboBox
@@ -422,6 +425,16 @@ namespace PhysicsCalculator {
 			this->T_button->UseVisualStyleBackColor = true;
 			this->T_button->Click += gcnew System::EventHandler(this, &CH3_E2::T_button_Click);
 			// 
+			// pictureBox1
+			// 
+			this->pictureBox1->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
+			this->pictureBox1->Location = System::Drawing::Point(163, 83);
+			this->pictureBox1->Name = L"pictureBox1";
+			this->pictureBox1->Size = System::Drawing::Size(468, 76);
+			this->pictureBox1->TabIndex = 152;
+			this->pictureBox1->TabStop = false;
+			// 
 			// CH3_E2
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -429,6 +442,7 @@ namespace PhysicsCalculator {
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(804, 636);
+			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->v_comboBox);
 			this->Controls->Add(this->v_textBox);
 			this->Controls->Add(this->v_label);
@@ -458,6 +472,7 @@ namespace PhysicsCalculator {
 			this->Name = L"CH3_E2";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterParent;
 			this->Text = L"CH3_E2";
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 

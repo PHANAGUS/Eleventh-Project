@@ -69,6 +69,7 @@ namespace PhysicsCalculator {
 
 
 	private: System::Windows::Forms::ComboBox^ g_comboBox;
+	private: System::Windows::Forms::PictureBox^ pictureBox1;
 
 
 	private:
@@ -108,6 +109,8 @@ namespace PhysicsCalculator {
 			this->tta_u_label = (gcnew System::Windows::Forms::Label());
 			this->g_u_label = (gcnew System::Windows::Forms::Label());
 			this->g_comboBox = (gcnew System::Windows::Forms::ComboBox());
+			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// g_label
@@ -417,6 +420,16 @@ namespace PhysicsCalculator {
 			this->g_comboBox->Size = System::Drawing::Size(178, 48);
 			this->g_comboBox->TabIndex = 99;
 			// 
+			// pictureBox1
+			// 
+			this->pictureBox1->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
+			this->pictureBox1->Location = System::Drawing::Point(172, 82);
+			this->pictureBox1->Name = L"pictureBox1";
+			this->pictureBox1->Size = System::Drawing::Size(468, 76);
+			this->pictureBox1->TabIndex = 104;
+			this->pictureBox1->TabStop = false;
+			// 
 			// CH2_E1
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -424,6 +437,7 @@ namespace PhysicsCalculator {
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(804, 636);
+			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->tta_u_label);
 			this->Controls->Add(this->g_u_label);
 			this->Controls->Add(this->g_label);
@@ -453,6 +467,7 @@ namespace PhysicsCalculator {
 			this->Name = L"CH2_E1";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterParent;
 			this->Text = L"CH2_E1";
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 

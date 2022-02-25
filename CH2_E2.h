@@ -61,6 +61,7 @@ namespace PhysicsCalculator {
 	private: System::Windows::Forms::Button^ cal_button;
 	private: System::Windows::Forms::ComboBox^ comboBox1;
 	private: System::Windows::Forms::Label^ Find_label;
+	private: System::Windows::Forms::PictureBox^ pictureBox1;
 
 	private:
 		/// <summary>
@@ -99,6 +100,8 @@ namespace PhysicsCalculator {
 			this->cal_button = (gcnew System::Windows::Forms::Button());
 			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
 			this->Find_label = (gcnew System::Windows::Forms::Label());
+			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// tta_u_label
@@ -411,6 +414,16 @@ namespace PhysicsCalculator {
 			this->Find_label->Text = L"Find :";
 			this->Find_label->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
+			// pictureBox1
+			// 
+			this->pictureBox1->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
+			this->pictureBox1->Location = System::Drawing::Point(172, 80);
+			this->pictureBox1->Name = L"pictureBox1";
+			this->pictureBox1->Size = System::Drawing::Size(468, 76);
+			this->pictureBox1->TabIndex = 127;
+			this->pictureBox1->TabStop = false;
+			// 
 			// CH2_E2
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -418,6 +431,7 @@ namespace PhysicsCalculator {
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(804, 636);
+			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->tta_u_label);
 			this->Controls->Add(this->g_u_label);
 			this->Controls->Add(this->g_label);
@@ -447,6 +461,7 @@ namespace PhysicsCalculator {
 			this->Name = L"CH2_E2";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterParent;
 			this->Text = L"CH2_E2";
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 

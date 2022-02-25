@@ -74,6 +74,7 @@ namespace PhysicsCalculator {
 	private: System::Windows::Forms::Label^ label3;
 	private: System::Windows::Forms::Button^ reset_button;
 	private: System::Windows::Forms::Button^ convert_button;
+	private: System::Windows::Forms::PictureBox^ pictureBox1;
 
 
 
@@ -121,6 +122,8 @@ namespace PhysicsCalculator {
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->reset_button = (gcnew System::Windows::Forms::Button());
 			this->convert_button = (gcnew System::Windows::Forms::Button());
+			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// comboBox1
@@ -431,6 +434,16 @@ namespace PhysicsCalculator {
 			this->convert_button->UseVisualStyleBackColor = true;
 			this->convert_button->Click += gcnew System::EventHandler(this, &CH1_E1::convert_button_Click);
 			// 
+			// pictureBox1
+			// 
+			this->pictureBox1->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
+			this->pictureBox1->Location = System::Drawing::Point(169, 72);
+			this->pictureBox1->Name = L"pictureBox1";
+			this->pictureBox1->Size = System::Drawing::Size(468, 76);
+			this->pictureBox1->TabIndex = 14;
+			this->pictureBox1->TabStop = false;
+			// 
 			// CH1_E1
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -438,6 +451,7 @@ namespace PhysicsCalculator {
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(804, 636);
+			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->convert_button);
 			this->Controls->Add(this->reset_button);
 			this->Controls->Add(this->t_comboBox);
@@ -467,6 +481,7 @@ namespace PhysicsCalculator {
 			this->Name = L"CH1_E1";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterParent;
 			this->Text = L"CH1_E1";
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 

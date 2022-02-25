@@ -61,7 +61,7 @@ namespace PhysicsCalculator {
 	private: System::Windows::Forms::Label^ Equation_label;
 	private: System::Windows::Forms::Button^ Chapter2_button;
 	private: System::Windows::Forms::Button^ Chapter3_button;
-	private: System::Windows::Forms::Button^ Chapter4_button;
+
 	private: System::Windows::Forms::Button^ Chapter5_button;
 	private: System::Windows::Forms::Label^ Find_label;
 	private: System::Windows::Forms::ComboBox^ comboBox1;
@@ -78,10 +78,10 @@ namespace PhysicsCalculator {
 	private: System::Windows::Forms::Button^ CH3_E2_button;
 	private: System::Windows::Forms::Button^ CH3_E3_button;
 	private: System::Windows::Forms::Button^ CH3_E4_button;
-	private: System::Windows::Forms::Button^ CH4_E1_button;
-	private: System::Windows::Forms::Button^ CH4_E2_button;
-	private: System::Windows::Forms::Button^ CH4_E3_button;
-	private: System::Windows::Forms::Button^ CH4_E4_button;
+
+
+
+
 	private: System::Windows::Forms::Button^ CH5_E1_button;
 	private: System::Windows::Forms::Button^ CH5_E2_button;
 	private: System::Windows::Forms::Button^ CH5_E3_button;
@@ -111,12 +111,12 @@ namespace PhysicsCalculator {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(Home::typeid));
 			this->HomeHeader = (gcnew System::Windows::Forms::Label());
 			this->Topic_flowLayoutPanel = (gcnew System::Windows::Forms::FlowLayoutPanel());
 			this->Chapter1_button = (gcnew System::Windows::Forms::Button());
 			this->Chapter2_button = (gcnew System::Windows::Forms::Button());
 			this->Chapter3_button = (gcnew System::Windows::Forms::Button());
-			this->Chapter4_button = (gcnew System::Windows::Forms::Button());
 			this->Chapter5_button = (gcnew System::Windows::Forms::Button());
 			this->Equation_flowLayoutPanel = (gcnew System::Windows::Forms::FlowLayoutPanel());
 			this->CH1_E1_button = (gcnew System::Windows::Forms::Button());
@@ -132,10 +132,6 @@ namespace PhysicsCalculator {
 			this->CH3_E2_button = (gcnew System::Windows::Forms::Button());
 			this->CH3_E3_button = (gcnew System::Windows::Forms::Button());
 			this->CH3_E4_button = (gcnew System::Windows::Forms::Button());
-			this->CH4_E1_button = (gcnew System::Windows::Forms::Button());
-			this->CH4_E2_button = (gcnew System::Windows::Forms::Button());
-			this->CH4_E3_button = (gcnew System::Windows::Forms::Button());
-			this->CH4_E4_button = (gcnew System::Windows::Forms::Button());
 			this->CH5_E1_button = (gcnew System::Windows::Forms::Button());
 			this->CH5_E2_button = (gcnew System::Windows::Forms::Button());
 			this->CH5_E3_button = (gcnew System::Windows::Forms::Button());
@@ -155,9 +151,11 @@ namespace PhysicsCalculator {
 			// HomeHeader
 			// 
 			this->HomeHeader->AutoSize = true;
+			this->HomeHeader->BackColor = System::Drawing::Color::Transparent;
 			this->HomeHeader->Font = (gcnew System::Drawing::Font(L"FC Iconic", 36, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->HomeHeader->Location = System::Drawing::Point(12, 15);
+			this->HomeHeader->ForeColor = System::Drawing::Color::GhostWhite;
+			this->HomeHeader->Location = System::Drawing::Point(242, 12);
 			this->HomeHeader->Name = L"HomeHeader";
 			this->HomeHeader->Size = System::Drawing::Size(331, 48);
 			this->HomeHeader->TabIndex = 0;
@@ -165,10 +163,10 @@ namespace PhysicsCalculator {
 			// 
 			// Topic_flowLayoutPanel
 			// 
+			this->Topic_flowLayoutPanel->BackColor = System::Drawing::Color::Transparent;
 			this->Topic_flowLayoutPanel->Controls->Add(this->Chapter1_button);
 			this->Topic_flowLayoutPanel->Controls->Add(this->Chapter2_button);
 			this->Topic_flowLayoutPanel->Controls->Add(this->Chapter3_button);
-			this->Topic_flowLayoutPanel->Controls->Add(this->Chapter4_button);
 			this->Topic_flowLayoutPanel->Controls->Add(this->Chapter5_button);
 			this->Topic_flowLayoutPanel->Location = System::Drawing::Point(12, 122);
 			this->Topic_flowLayoutPanel->Name = L"Topic_flowLayoutPanel";
@@ -177,6 +175,7 @@ namespace PhysicsCalculator {
 			// 
 			// Chapter1_button
 			// 
+			this->Chapter1_button->BackColor = System::Drawing::Color::White;
 			this->Chapter1_button->Font = (gcnew System::Drawing::Font(L"TH Sarabun New", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Chapter1_button->Location = System::Drawing::Point(3, 3);
@@ -184,11 +183,12 @@ namespace PhysicsCalculator {
 			this->Chapter1_button->Size = System::Drawing::Size(279, 76);
 			this->Chapter1_button->TabIndex = 0;
 			this->Chapter1_button->Text = L"การเคลื่อนที่แนวเส้นตรง";
-			this->Chapter1_button->UseVisualStyleBackColor = true;
+			this->Chapter1_button->UseVisualStyleBackColor = false;
 			this->Chapter1_button->Click += gcnew System::EventHandler(this, &Home::Chapter1_button_Click);
 			// 
 			// Chapter2_button
 			// 
+			this->Chapter2_button->BackColor = System::Drawing::Color::White;
 			this->Chapter2_button->Font = (gcnew System::Drawing::Font(L"TH Sarabun New", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Chapter2_button->Location = System::Drawing::Point(3, 85);
@@ -196,11 +196,12 @@ namespace PhysicsCalculator {
 			this->Chapter2_button->Size = System::Drawing::Size(279, 76);
 			this->Chapter2_button->TabIndex = 1;
 			this->Chapter2_button->Text = L"การเคลื่อนที่แบบโพรเจคไทล์";
-			this->Chapter2_button->UseVisualStyleBackColor = true;
+			this->Chapter2_button->UseVisualStyleBackColor = false;
 			this->Chapter2_button->Click += gcnew System::EventHandler(this, &Home::Chapter2_button_Click);
 			// 
 			// Chapter3_button
 			// 
+			this->Chapter3_button->BackColor = System::Drawing::Color::White;
 			this->Chapter3_button->Font = (gcnew System::Drawing::Font(L"TH Sarabun New", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Chapter3_button->Location = System::Drawing::Point(3, 167);
@@ -208,38 +209,26 @@ namespace PhysicsCalculator {
 			this->Chapter3_button->Size = System::Drawing::Size(279, 76);
 			this->Chapter3_button->TabIndex = 2;
 			this->Chapter3_button->Text = L"การเคลื่อนที่แบบวงกลม";
-			this->Chapter3_button->UseVisualStyleBackColor = true;
+			this->Chapter3_button->UseVisualStyleBackColor = false;
 			this->Chapter3_button->Click += gcnew System::EventHandler(this, &Home::Chapter3_button_Click);
-			// 
-			// Chapter4_button
-			// 
-			this->Chapter4_button->Enabled = false;
-			this->Chapter4_button->Font = (gcnew System::Drawing::Font(L"TH Sarabun New", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->Chapter4_button->Location = System::Drawing::Point(3, 249);
-			this->Chapter4_button->Name = L"Chapter4_button";
-			this->Chapter4_button->Size = System::Drawing::Size(279, 76);
-			this->Chapter4_button->TabIndex = 3;
-			this->Chapter4_button->Text = L"การเคลื่อนที่แบบฮาร์มอนิก";
-			this->Chapter4_button->UseVisualStyleBackColor = true;
-			this->Chapter4_button->Visible = false;
-			this->Chapter4_button->Click += gcnew System::EventHandler(this, &Home::Chapter4_button_Click);
 			// 
 			// Chapter5_button
 			// 
+			this->Chapter5_button->BackColor = System::Drawing::Color::White;
 			this->Chapter5_button->Font = (gcnew System::Drawing::Font(L"TH Sarabun New", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->Chapter5_button->Location = System::Drawing::Point(3, 331);
+			this->Chapter5_button->Location = System::Drawing::Point(3, 249);
 			this->Chapter5_button->Name = L"Chapter5_button";
 			this->Chapter5_button->Size = System::Drawing::Size(279, 76);
 			this->Chapter5_button->TabIndex = 4;
 			this->Chapter5_button->Text = L"งาน และ พลังงาน";
-			this->Chapter5_button->UseVisualStyleBackColor = true;
+			this->Chapter5_button->UseVisualStyleBackColor = false;
 			this->Chapter5_button->Click += gcnew System::EventHandler(this, &Home::Chapter5_button_Click);
 			// 
 			// Equation_flowLayoutPanel
 			// 
 			this->Equation_flowLayoutPanel->AutoScroll = true;
+			this->Equation_flowLayoutPanel->BackColor = System::Drawing::Color::Transparent;
 			this->Equation_flowLayoutPanel->Controls->Add(this->CH1_E1_button);
 			this->Equation_flowLayoutPanel->Controls->Add(this->CH1_E2_button);
 			this->Equation_flowLayoutPanel->Controls->Add(this->CH1_E3_button);
@@ -253,10 +242,6 @@ namespace PhysicsCalculator {
 			this->Equation_flowLayoutPanel->Controls->Add(this->CH3_E2_button);
 			this->Equation_flowLayoutPanel->Controls->Add(this->CH3_E3_button);
 			this->Equation_flowLayoutPanel->Controls->Add(this->CH3_E4_button);
-			this->Equation_flowLayoutPanel->Controls->Add(this->CH4_E1_button);
-			this->Equation_flowLayoutPanel->Controls->Add(this->CH4_E2_button);
-			this->Equation_flowLayoutPanel->Controls->Add(this->CH4_E3_button);
-			this->Equation_flowLayoutPanel->Controls->Add(this->CH4_E4_button);
 			this->Equation_flowLayoutPanel->Controls->Add(this->CH5_E1_button);
 			this->Equation_flowLayoutPanel->Controls->Add(this->CH5_E2_button);
 			this->Equation_flowLayoutPanel->Controls->Add(this->CH5_E3_button);
@@ -273,11 +258,11 @@ namespace PhysicsCalculator {
 			// 
 			this->CH1_E1_button->Font = (gcnew System::Drawing::Font(L"TH Sarabun New", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->CH1_E1_button->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"CH1_E1_button.Image")));
 			this->CH1_E1_button->Location = System::Drawing::Point(3, 3);
 			this->CH1_E1_button->Name = L"CH1_E1_button";
 			this->CH1_E1_button->Size = System::Drawing::Size(468, 76);
 			this->CH1_E1_button->TabIndex = 1;
-			this->CH1_E1_button->Text = L"CH1_E1_button";
 			this->CH1_E1_button->UseVisualStyleBackColor = true;
 			this->CH1_E1_button->Click += gcnew System::EventHandler(this, &Home::CH1_E1_button_Click);
 			// 
@@ -285,11 +270,11 @@ namespace PhysicsCalculator {
 			// 
 			this->CH1_E2_button->Font = (gcnew System::Drawing::Font(L"TH Sarabun New", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->CH1_E2_button->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"CH1_E2_button.Image")));
 			this->CH1_E2_button->Location = System::Drawing::Point(3, 85);
 			this->CH1_E2_button->Name = L"CH1_E2_button";
 			this->CH1_E2_button->Size = System::Drawing::Size(468, 76);
 			this->CH1_E2_button->TabIndex = 2;
-			this->CH1_E2_button->Text = L"CH1_E2_button";
 			this->CH1_E2_button->UseVisualStyleBackColor = true;
 			this->CH1_E2_button->Click += gcnew System::EventHandler(this, &Home::CH1_E2_button_Click);
 			// 
@@ -297,11 +282,11 @@ namespace PhysicsCalculator {
 			// 
 			this->CH1_E3_button->Font = (gcnew System::Drawing::Font(L"TH Sarabun New", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->CH1_E3_button->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"CH1_E3_button.Image")));
 			this->CH1_E3_button->Location = System::Drawing::Point(3, 167);
 			this->CH1_E3_button->Name = L"CH1_E3_button";
 			this->CH1_E3_button->Size = System::Drawing::Size(468, 76);
 			this->CH1_E3_button->TabIndex = 3;
-			this->CH1_E3_button->Text = L"CH1_E3_button";
 			this->CH1_E3_button->UseVisualStyleBackColor = true;
 			this->CH1_E3_button->Click += gcnew System::EventHandler(this, &Home::CH1_E3_button_Click);
 			// 
@@ -309,11 +294,11 @@ namespace PhysicsCalculator {
 			// 
 			this->CH1_E4_button->Font = (gcnew System::Drawing::Font(L"TH Sarabun New", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->CH1_E4_button->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"CH1_E4_button.Image")));
 			this->CH1_E4_button->Location = System::Drawing::Point(3, 249);
 			this->CH1_E4_button->Name = L"CH1_E4_button";
 			this->CH1_E4_button->Size = System::Drawing::Size(468, 76);
 			this->CH1_E4_button->TabIndex = 4;
-			this->CH1_E4_button->Text = L"CH1_E4_button";
 			this->CH1_E4_button->UseVisualStyleBackColor = true;
 			this->CH1_E4_button->Click += gcnew System::EventHandler(this, &Home::CH1_E4_button_Click);
 			// 
@@ -321,11 +306,11 @@ namespace PhysicsCalculator {
 			// 
 			this->CH1_E5_button->Font = (gcnew System::Drawing::Font(L"TH Sarabun New", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->CH1_E5_button->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"CH1_E5_button.Image")));
 			this->CH1_E5_button->Location = System::Drawing::Point(3, 331);
 			this->CH1_E5_button->Name = L"CH1_E5_button";
 			this->CH1_E5_button->Size = System::Drawing::Size(468, 76);
 			this->CH1_E5_button->TabIndex = 5;
-			this->CH1_E5_button->Text = L"CH1_E5_button";
 			this->CH1_E5_button->UseVisualStyleBackColor = true;
 			this->CH1_E5_button->Click += gcnew System::EventHandler(this, &Home::CH1_E5_button_Click);
 			// 
@@ -333,11 +318,11 @@ namespace PhysicsCalculator {
 			// 
 			this->CH1_E6_button->Font = (gcnew System::Drawing::Font(L"TH Sarabun New", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->CH1_E6_button->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"CH1_E6_button.Image")));
 			this->CH1_E6_button->Location = System::Drawing::Point(3, 413);
 			this->CH1_E6_button->Name = L"CH1_E6_button";
 			this->CH1_E6_button->Size = System::Drawing::Size(468, 76);
 			this->CH1_E6_button->TabIndex = 6;
-			this->CH1_E6_button->Text = L"CH1_E6_button";
 			this->CH1_E6_button->UseVisualStyleBackColor = true;
 			this->CH1_E6_button->Click += gcnew System::EventHandler(this, &Home::CH1_E6_button_Click);
 			// 
@@ -345,11 +330,11 @@ namespace PhysicsCalculator {
 			// 
 			this->CH2_E1_button->Font = (gcnew System::Drawing::Font(L"TH Sarabun New", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->CH2_E1_button->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"CH2_E1_button.Image")));
 			this->CH2_E1_button->Location = System::Drawing::Point(3, 495);
 			this->CH2_E1_button->Name = L"CH2_E1_button";
 			this->CH2_E1_button->Size = System::Drawing::Size(468, 76);
 			this->CH2_E1_button->TabIndex = 7;
-			this->CH2_E1_button->Text = L"CH2_E1_button";
 			this->CH2_E1_button->UseVisualStyleBackColor = true;
 			this->CH2_E1_button->Click += gcnew System::EventHandler(this, &Home::CH2_E1_button_Click);
 			// 
@@ -357,11 +342,11 @@ namespace PhysicsCalculator {
 			// 
 			this->CH2_E2_button->Font = (gcnew System::Drawing::Font(L"TH Sarabun New", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->CH2_E2_button->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"CH2_E2_button.Image")));
 			this->CH2_E2_button->Location = System::Drawing::Point(3, 577);
 			this->CH2_E2_button->Name = L"CH2_E2_button";
 			this->CH2_E2_button->Size = System::Drawing::Size(468, 76);
 			this->CH2_E2_button->TabIndex = 8;
-			this->CH2_E2_button->Text = L"CH2_E2_button";
 			this->CH2_E2_button->UseVisualStyleBackColor = true;
 			this->CH2_E2_button->Click += gcnew System::EventHandler(this, &Home::CH2_E2_button_Click);
 			// 
@@ -369,11 +354,11 @@ namespace PhysicsCalculator {
 			// 
 			this->CH2_E3_button->Font = (gcnew System::Drawing::Font(L"TH Sarabun New", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->CH2_E3_button->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"CH2_E3_button.Image")));
 			this->CH2_E3_button->Location = System::Drawing::Point(3, 659);
 			this->CH2_E3_button->Name = L"CH2_E3_button";
 			this->CH2_E3_button->Size = System::Drawing::Size(468, 76);
 			this->CH2_E3_button->TabIndex = 9;
-			this->CH2_E3_button->Text = L"CH2_E3_button";
 			this->CH2_E3_button->UseVisualStyleBackColor = true;
 			this->CH2_E3_button->Click += gcnew System::EventHandler(this, &Home::CH2_E3_button_Click);
 			// 
@@ -381,11 +366,11 @@ namespace PhysicsCalculator {
 			// 
 			this->CH3_E1_button->Font = (gcnew System::Drawing::Font(L"TH Sarabun New", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->CH3_E1_button->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"CH3_E1_button.Image")));
 			this->CH3_E1_button->Location = System::Drawing::Point(3, 741);
 			this->CH3_E1_button->Name = L"CH3_E1_button";
 			this->CH3_E1_button->Size = System::Drawing::Size(468, 76);
 			this->CH3_E1_button->TabIndex = 10;
-			this->CH3_E1_button->Text = L"CH3_E1_button";
 			this->CH3_E1_button->UseVisualStyleBackColor = true;
 			this->CH3_E1_button->Click += gcnew System::EventHandler(this, &Home::CH3_E1_button_Click);
 			// 
@@ -393,11 +378,11 @@ namespace PhysicsCalculator {
 			// 
 			this->CH3_E2_button->Font = (gcnew System::Drawing::Font(L"TH Sarabun New", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->CH3_E2_button->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"CH3_E2_button.Image")));
 			this->CH3_E2_button->Location = System::Drawing::Point(3, 823);
 			this->CH3_E2_button->Name = L"CH3_E2_button";
 			this->CH3_E2_button->Size = System::Drawing::Size(468, 76);
 			this->CH3_E2_button->TabIndex = 11;
-			this->CH3_E2_button->Text = L"CH3_E2_button";
 			this->CH3_E2_button->UseVisualStyleBackColor = true;
 			this->CH3_E2_button->Click += gcnew System::EventHandler(this, &Home::CH3_E2_button_Click);
 			// 
@@ -405,11 +390,11 @@ namespace PhysicsCalculator {
 			// 
 			this->CH3_E3_button->Font = (gcnew System::Drawing::Font(L"TH Sarabun New", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->CH3_E3_button->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"CH3_E3_button.Image")));
 			this->CH3_E3_button->Location = System::Drawing::Point(3, 905);
 			this->CH3_E3_button->Name = L"CH3_E3_button";
 			this->CH3_E3_button->Size = System::Drawing::Size(468, 76);
 			this->CH3_E3_button->TabIndex = 12;
-			this->CH3_E3_button->Text = L"CH3_E3_button";
 			this->CH3_E3_button->UseVisualStyleBackColor = true;
 			this->CH3_E3_button->Click += gcnew System::EventHandler(this, &Home::CH3_E3_button_Click);
 			// 
@@ -417,75 +402,23 @@ namespace PhysicsCalculator {
 			// 
 			this->CH3_E4_button->Font = (gcnew System::Drawing::Font(L"TH Sarabun New", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->CH3_E4_button->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"CH3_E4_button.Image")));
 			this->CH3_E4_button->Location = System::Drawing::Point(3, 987);
 			this->CH3_E4_button->Name = L"CH3_E4_button";
 			this->CH3_E4_button->Size = System::Drawing::Size(468, 76);
 			this->CH3_E4_button->TabIndex = 13;
-			this->CH3_E4_button->Text = L"CH3_E4_button";
 			this->CH3_E4_button->UseVisualStyleBackColor = true;
 			this->CH3_E4_button->Click += gcnew System::EventHandler(this, &Home::CH3_E4_button_Click);
-			// 
-			// CH4_E1_button
-			// 
-			this->CH4_E1_button->Enabled = false;
-			this->CH4_E1_button->Font = (gcnew System::Drawing::Font(L"TH Sarabun New", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->CH4_E1_button->Location = System::Drawing::Point(3, 1069);
-			this->CH4_E1_button->Name = L"CH4_E1_button";
-			this->CH4_E1_button->Size = System::Drawing::Size(468, 76);
-			this->CH4_E1_button->TabIndex = 14;
-			this->CH4_E1_button->Text = L"CH4_E1_button";
-			this->CH4_E1_button->UseVisualStyleBackColor = true;
-			this->CH4_E1_button->Visible = false;
-			// 
-			// CH4_E2_button
-			// 
-			this->CH4_E2_button->Enabled = false;
-			this->CH4_E2_button->Font = (gcnew System::Drawing::Font(L"TH Sarabun New", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->CH4_E2_button->Location = System::Drawing::Point(3, 1151);
-			this->CH4_E2_button->Name = L"CH4_E2_button";
-			this->CH4_E2_button->Size = System::Drawing::Size(468, 76);
-			this->CH4_E2_button->TabIndex = 15;
-			this->CH4_E2_button->Text = L"CH4_E2_button";
-			this->CH4_E2_button->UseVisualStyleBackColor = true;
-			this->CH4_E2_button->Visible = false;
-			// 
-			// CH4_E3_button
-			// 
-			this->CH4_E3_button->Enabled = false;
-			this->CH4_E3_button->Font = (gcnew System::Drawing::Font(L"TH Sarabun New", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->CH4_E3_button->Location = System::Drawing::Point(3, 1233);
-			this->CH4_E3_button->Name = L"CH4_E3_button";
-			this->CH4_E3_button->Size = System::Drawing::Size(468, 76);
-			this->CH4_E3_button->TabIndex = 16;
-			this->CH4_E3_button->Text = L"CH4_E3_button";
-			this->CH4_E3_button->UseVisualStyleBackColor = true;
-			this->CH4_E3_button->Visible = false;
-			// 
-			// CH4_E4_button
-			// 
-			this->CH4_E4_button->Enabled = false;
-			this->CH4_E4_button->Font = (gcnew System::Drawing::Font(L"TH Sarabun New", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->CH4_E4_button->Location = System::Drawing::Point(3, 1315);
-			this->CH4_E4_button->Name = L"CH4_E4_button";
-			this->CH4_E4_button->Size = System::Drawing::Size(468, 76);
-			this->CH4_E4_button->TabIndex = 17;
-			this->CH4_E4_button->Text = L"CH4_E4_button";
-			this->CH4_E4_button->UseVisualStyleBackColor = true;
-			this->CH4_E4_button->Visible = false;
 			// 
 			// CH5_E1_button
 			// 
 			this->CH5_E1_button->Font = (gcnew System::Drawing::Font(L"TH Sarabun New", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->CH5_E1_button->Location = System::Drawing::Point(3, 1397);
+			this->CH5_E1_button->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"CH5_E1_button.Image")));
+			this->CH5_E1_button->Location = System::Drawing::Point(3, 1069);
 			this->CH5_E1_button->Name = L"CH5_E1_button";
 			this->CH5_E1_button->Size = System::Drawing::Size(468, 76);
 			this->CH5_E1_button->TabIndex = 18;
-			this->CH5_E1_button->Text = L"CH5_E1_button";
 			this->CH5_E1_button->UseVisualStyleBackColor = true;
 			this->CH5_E1_button->Click += gcnew System::EventHandler(this, &Home::CH5_E1_button_Click);
 			// 
@@ -493,11 +426,11 @@ namespace PhysicsCalculator {
 			// 
 			this->CH5_E2_button->Font = (gcnew System::Drawing::Font(L"TH Sarabun New", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->CH5_E2_button->Location = System::Drawing::Point(3, 1479);
+			this->CH5_E2_button->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"CH5_E2_button.Image")));
+			this->CH5_E2_button->Location = System::Drawing::Point(3, 1151);
 			this->CH5_E2_button->Name = L"CH5_E2_button";
 			this->CH5_E2_button->Size = System::Drawing::Size(468, 76);
 			this->CH5_E2_button->TabIndex = 19;
-			this->CH5_E2_button->Text = L"CH5_E2_button";
 			this->CH5_E2_button->UseVisualStyleBackColor = true;
 			this->CH5_E2_button->Click += gcnew System::EventHandler(this, &Home::CH5_E2_button_Click);
 			// 
@@ -505,11 +438,11 @@ namespace PhysicsCalculator {
 			// 
 			this->CH5_E3_button->Font = (gcnew System::Drawing::Font(L"TH Sarabun New", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->CH5_E3_button->Location = System::Drawing::Point(3, 1561);
+			this->CH5_E3_button->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"CH5_E3_button.Image")));
+			this->CH5_E3_button->Location = System::Drawing::Point(3, 1233);
 			this->CH5_E3_button->Name = L"CH5_E3_button";
 			this->CH5_E3_button->Size = System::Drawing::Size(468, 76);
 			this->CH5_E3_button->TabIndex = 20;
-			this->CH5_E3_button->Text = L"CH5_E3_button";
 			this->CH5_E3_button->UseVisualStyleBackColor = true;
 			this->CH5_E3_button->Click += gcnew System::EventHandler(this, &Home::CH5_E3_button_Click);
 			// 
@@ -517,11 +450,11 @@ namespace PhysicsCalculator {
 			// 
 			this->CH5_E4_button->Font = (gcnew System::Drawing::Font(L"TH Sarabun New", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->CH5_E4_button->Location = System::Drawing::Point(3, 1643);
+			this->CH5_E4_button->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"CH5_E4_button.Image")));
+			this->CH5_E4_button->Location = System::Drawing::Point(3, 1315);
 			this->CH5_E4_button->Name = L"CH5_E4_button";
 			this->CH5_E4_button->Size = System::Drawing::Size(468, 76);
 			this->CH5_E4_button->TabIndex = 21;
-			this->CH5_E4_button->Text = L"CH5_E4_button";
 			this->CH5_E4_button->UseVisualStyleBackColor = true;
 			this->CH5_E4_button->Click += gcnew System::EventHandler(this, &Home::CH5_E4_button_Click);
 			// 
@@ -529,11 +462,11 @@ namespace PhysicsCalculator {
 			// 
 			this->CH5_E5_button->Font = (gcnew System::Drawing::Font(L"TH Sarabun New", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->CH5_E5_button->Location = System::Drawing::Point(3, 1725);
+			this->CH5_E5_button->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"CH5_E5_button.Image")));
+			this->CH5_E5_button->Location = System::Drawing::Point(3, 1397);
 			this->CH5_E5_button->Name = L"CH5_E5_button";
 			this->CH5_E5_button->Size = System::Drawing::Size(468, 76);
 			this->CH5_E5_button->TabIndex = 22;
-			this->CH5_E5_button->Text = L"CH5_E5_button";
 			this->CH5_E5_button->UseVisualStyleBackColor = true;
 			this->CH5_E5_button->Click += gcnew System::EventHandler(this, &Home::CH5_E5_button_Click);
 			// 
@@ -541,11 +474,11 @@ namespace PhysicsCalculator {
 			// 
 			this->CH5_E6_button->Font = (gcnew System::Drawing::Font(L"TH Sarabun New", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->CH5_E6_button->Location = System::Drawing::Point(3, 1807);
+			this->CH5_E6_button->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"CH5_E6_button.Image")));
+			this->CH5_E6_button->Location = System::Drawing::Point(3, 1479);
 			this->CH5_E6_button->Name = L"CH5_E6_button";
 			this->CH5_E6_button->Size = System::Drawing::Size(468, 76);
 			this->CH5_E6_button->TabIndex = 23;
-			this->CH5_E6_button->Text = L"CH5_E6_button";
 			this->CH5_E6_button->UseVisualStyleBackColor = true;
 			this->CH5_E6_button->Click += gcnew System::EventHandler(this, &Home::CH5_E6_button_Click);
 			// 
@@ -553,19 +486,21 @@ namespace PhysicsCalculator {
 			// 
 			this->CH5_E7_button->Font = (gcnew System::Drawing::Font(L"TH Sarabun New", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->CH5_E7_button->Location = System::Drawing::Point(3, 1889);
+			this->CH5_E7_button->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"CH5_E7_button.Image")));
+			this->CH5_E7_button->Location = System::Drawing::Point(3, 1561);
 			this->CH5_E7_button->Name = L"CH5_E7_button";
 			this->CH5_E7_button->Size = System::Drawing::Size(468, 76);
 			this->CH5_E7_button->TabIndex = 24;
-			this->CH5_E7_button->Text = L"CH5_E7_button";
 			this->CH5_E7_button->UseVisualStyleBackColor = true;
 			this->CH5_E7_button->Click += gcnew System::EventHandler(this, &Home::CH5_E7_button_Click);
 			// 
 			// Topic_label
 			// 
 			this->Topic_label->AutoSize = true;
+			this->Topic_label->BackColor = System::Drawing::Color::Transparent;
 			this->Topic_label->Font = (gcnew System::Drawing::Font(L"Bangna New", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->Topic_label->ForeColor = System::Drawing::Color::GhostWhite;
 			this->Topic_label->Location = System::Drawing::Point(110, 74);
 			this->Topic_label->Name = L"Topic_label";
 			this->Topic_label->Size = System::Drawing::Size(89, 48);
@@ -576,8 +511,10 @@ namespace PhysicsCalculator {
 			// Equation_label
 			// 
 			this->Equation_label->AutoSize = true;
+			this->Equation_label->BackColor = System::Drawing::Color::Transparent;
 			this->Equation_label->Font = (gcnew System::Drawing::Font(L"Bangna New", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->Equation_label->ForeColor = System::Drawing::Color::GhostWhite;
 			this->Equation_label->Location = System::Drawing::Point(295, 74);
 			this->Equation_label->Name = L"Equation_label";
 			this->Equation_label->Size = System::Drawing::Size(155, 48);
@@ -588,8 +525,10 @@ namespace PhysicsCalculator {
 			// Find_label
 			// 
 			this->Find_label->AutoSize = true;
+			this->Find_label->BackColor = System::Drawing::Color::Transparent;
 			this->Find_label->Font = (gcnew System::Drawing::Font(L"Bangna New", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->Find_label->ForeColor = System::Drawing::Color::GhostWhite;
 			this->Find_label->Location = System::Drawing::Point(456, 79);
 			this->Find_label->Name = L"Find_label";
 			this->Find_label->Size = System::Drawing::Size(73, 37);
@@ -619,20 +558,25 @@ namespace PhysicsCalculator {
 			// 
 			// reset_button
 			// 
-			this->reset_button->Font = (gcnew System::Drawing::Font(L"CordiaUPC", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->reset_button->BackColor = System::Drawing::Color::Crimson;
+			this->reset_button->Font = (gcnew System::Drawing::Font(L"CordiaUPC", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->reset_button->ForeColor = System::Drawing::Color::GhostWhite;
 			this->reset_button->Location = System::Drawing::Point(696, 12);
 			this->reset_button->Name = L"reset_button";
 			this->reset_button->Size = System::Drawing::Size(75, 34);
 			this->reset_button->TabIndex = 7;
 			this->reset_button->Text = L"RESET";
-			this->reset_button->UseVisualStyleBackColor = true;
+			this->reset_button->UseVisualStyleBackColor = false;
 			this->reset_button->Click += gcnew System::EventHandler(this, &Home::reset_button_Click);
 			// 
 			// Home
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->BackColor = System::Drawing::SystemColors::ControlLight;
+			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
+			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(804, 636);
 			this->Controls->Add(this->reset_button);
 			this->Controls->Add(this->comboBox1);
@@ -669,7 +613,6 @@ private: System::Void Chapter1_button_Click(System::Object^ sender, System::Even
 	{Chapter1_button->Enabled = false;
 	Chapter2_button->Enabled = true;
 	Chapter3_button->Enabled = true;
-	Chapter4_button->Enabled = true;
 	Chapter5_button->Enabled = true; }
 	//set combobox
 	{comboBox1->Items->Clear();
@@ -696,11 +639,6 @@ private: System::Void Chapter1_button_Click(System::Object^ sender, System::Even
 		CH3_E2_button->Visible = false;
 		CH3_E3_button->Visible = false;
 		CH3_E4_button->Visible = false;
-		//ch4
-		CH4_E1_button->Visible = false;
-		CH4_E2_button->Visible = false;
-		CH4_E3_button->Visible = false;
-		CH4_E4_button->Visible = false;
 		//ch5
 		CH5_E1_button->Visible = false;
 		CH5_E2_button->Visible = false;
@@ -716,7 +654,6 @@ private: System::Void Chapter2_button_Click(System::Object^ sender, System::Even
 	{Chapter1_button->Enabled = true;
 	Chapter2_button->Enabled = false;
 	Chapter3_button->Enabled = true;
-	Chapter4_button->Enabled = true;
 	Chapter5_button->Enabled = true; }
 	//set combobox
 	{comboBox1->Items->Clear();
@@ -742,11 +679,6 @@ private: System::Void Chapter2_button_Click(System::Object^ sender, System::Even
 		CH3_E2_button->Visible = false;
 		CH3_E3_button->Visible = false;
 		CH3_E4_button->Visible = false;
-		//ch4
-		CH4_E1_button->Visible = false;
-		CH4_E2_button->Visible = false;
-		CH4_E3_button->Visible = false;
-		CH4_E4_button->Visible = false;
 		//ch5
 		CH5_E1_button->Visible = false;
 		CH5_E2_button->Visible = false;
@@ -762,7 +694,6 @@ private: System::Void Chapter3_button_Click(System::Object^ sender, System::Even
 	{Chapter1_button->Enabled = true;
 	Chapter2_button->Enabled = true;
 	Chapter3_button->Enabled = false;
-	Chapter4_button->Enabled = true;
 	Chapter5_button->Enabled = true; }
 	//set combobox
 	{comboBox1->Items->Clear();
@@ -772,8 +703,7 @@ private: System::Void Chapter3_button_Click(System::Object^ sender, System::Even
 	comboBox1->Items->Add("T (Period)");
 	comboBox1->Items->Add("R (Radius)");
 	comboBox1->Items->Add("F[c] (Centripetal Force)");
-	comboBox1->Items->Add("a[c] (Centripetal Acceleration)");
-	comboBox1->Items->Add("t (Time)"); }
+	comboBox1->Items->Add("a[c] (Centripetal Acceleration)");}
 	//set equation
 	{//ch1
 		CH1_E1_button->Visible = false;
@@ -791,59 +721,6 @@ private: System::Void Chapter3_button_Click(System::Object^ sender, System::Even
 		CH3_E2_button->Visible = true;
 		CH3_E3_button->Visible = true;
 		CH3_E4_button->Visible = true;
-		//ch4
-		CH4_E1_button->Visible = false;
-		CH4_E2_button->Visible = false;
-		CH4_E3_button->Visible = false;
-		CH4_E4_button->Visible = false;
-		//ch5
-		CH5_E1_button->Visible = false;
-		CH5_E2_button->Visible = false;
-		CH5_E3_button->Visible = false;
-		CH5_E4_button->Visible = false;
-		CH5_E5_button->Visible = false;
-		CH5_E6_button->Visible = false;
-		CH5_E7_button->Visible = false; }
-}
-private: System::Void Chapter4_button_Click(System::Object^ sender, System::EventArgs^ e) {
-	selected_topic = 4;
-	//set topic
-	{Chapter1_button->Enabled = true;
-	Chapter2_button->Enabled = true;
-	Chapter3_button->Enabled = true;
-	Chapter4_button->Enabled = false;
-	Chapter5_button->Enabled = true; }
-	//set combobox
-	{comboBox1->Items->Clear();
-	comboBox1->Items->Add("(Default)");
-	comboBox1->Items->Add("v (Velocity)");
-	comboBox1->Items->Add("a (Acceleration)");
-	comboBox1->Items->Add("f (Frequency)");
-	comboBox1->Items->Add("T (Period)");
-	comboBox1->Items->Add("w (Angular Velocity)");
-	comboBox1->Items->Add("L (Rope Lenght)"); }
-	//set equation
-	{//ch1
-		CH1_E1_button->Visible = false;
-		CH1_E2_button->Visible = false;
-		CH1_E3_button->Visible = false;
-		CH1_E4_button->Visible = false;
-		CH1_E5_button->Visible = false;
-		CH1_E6_button->Visible = false;
-		//ch2
-		CH2_E1_button->Visible = false;
-		CH2_E2_button->Visible = false;
-		CH2_E3_button->Visible = false;
-		//ch3
-		CH3_E1_button->Visible = true;
-		CH3_E2_button->Visible = false;
-		CH3_E3_button->Visible = false;
-		CH3_E4_button->Visible = false;
-		//ch4
-		CH4_E1_button->Visible = true;
-		CH4_E2_button->Visible = true;
-		CH4_E3_button->Visible = true;
-		CH4_E4_button->Visible = true;
 		//ch5
 		CH5_E1_button->Visible = false;
 		CH5_E2_button->Visible = false;
@@ -859,7 +736,6 @@ private: System::Void Chapter5_button_Click(System::Object^ sender, System::Even
 	{Chapter1_button->Enabled = true;
 	Chapter2_button->Enabled = true;
 	Chapter3_button->Enabled = true;
-	Chapter4_button->Enabled = true;
 	Chapter5_button->Enabled = false; }
 	//set combobox
 	{comboBox1->Items->Clear();
@@ -891,11 +767,6 @@ private: System::Void Chapter5_button_Click(System::Object^ sender, System::Even
 		CH3_E2_button->Visible = false;
 		CH3_E3_button->Visible = false;
 		CH3_E4_button->Visible = false;
-		//ch4
-		CH4_E1_button->Visible = false;
-		CH4_E2_button->Visible = false;
-		CH4_E3_button->Visible = false;
-		CH4_E4_button->Visible = false;
 		//ch5
 		CH5_E1_button->Visible = true;
 		CH5_E2_button->Visible = true;
@@ -911,7 +782,6 @@ private: System::Void reset_button_Click(System::Object^ sender, System::EventAr
 	{Chapter1_button->Enabled = true;
 	Chapter2_button->Enabled = true;
 	Chapter3_button->Enabled = true;
-	//Chapter4_button->Enabled = true;
 	Chapter5_button->Enabled = true; }
 	//set combobox
 	{comboBox1->Items->Clear();
@@ -928,8 +798,6 @@ private: System::Void reset_button_Click(System::Object^ sender, System::EventAr
 	comboBox1->Items->Add("R (Radius)");
 	comboBox1->Items->Add("F[c] (Centripetal Force)");
 	comboBox1->Items->Add("a[c] (Centripetal Acceleration)");
-	//comboBox1->Items->Add("w (Angular Velocity)");
-	//comboBox1->Items->Add("L (Rope Lenght)");
 	comboBox1->Items->Add("W (Work)");
 	comboBox1->Items->Add("F (Force)");
 	comboBox1->Items->Add("P (Power)");
@@ -955,11 +823,6 @@ private: System::Void reset_button_Click(System::Object^ sender, System::EventAr
 	CH3_E2_button->Visible = true;
 	CH3_E3_button->Visible = true;
 	CH3_E4_button->Visible = true;
-	//ch4
-	/*CH4_E1_button->Visible = true;
-	CH4_E2_button->Visible = true;
-	CH4_E3_button->Visible = true;
-	CH4_E4_button->Visible = true;*/
 	//ch5
 	CH5_E1_button->Visible = true;
 	CH5_E2_button->Visible = true;
@@ -986,10 +849,6 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 			CH3_E2_button->Visible = true;
 			CH3_E3_button->Visible = true;
 			CH3_E4_button->Visible = true;
-			CH4_E1_button->Visible = true;
-			CH4_E2_button->Visible = true;
-			CH4_E3_button->Visible = true;
-			CH4_E4_button->Visible = true;
 			CH5_E1_button->Visible = true;
 			CH5_E2_button->Visible = true;
 			CH5_E3_button->Visible = true;
@@ -1008,15 +867,11 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 			CH2_E1_button->Visible = false;
 			CH2_E2_button->Visible = true;
 			CH2_E3_button->Visible = true;
-			CH3_E1_button->Visible = true;
-			CH3_E2_button->Visible = true;
-			CH3_E3_button->Visible = true;
-			CH3_E4_button->Visible = true;
-			CH4_E1_button->Visible = true;
-			CH4_E2_button->Visible = true;
-			CH4_E3_button->Visible = true;
-			CH4_E4_button->Visible = true;
-			CH5_E1_button->Visible = true;
+			CH3_E1_button->Visible = false;
+			CH3_E2_button->Visible = false;
+			CH3_E3_button->Visible = false;
+			CH3_E4_button->Visible = false;
+			CH5_E1_button->Visible = false;
 			CH5_E2_button->Visible = false;
 			CH5_E3_button->Visible = false;
 			CH5_E4_button->Visible = false;
@@ -1035,13 +890,9 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 			CH2_E2_button->Visible = true;
 			CH2_E3_button->Visible = true;
 			CH3_E1_button->Visible = false;
-			CH3_E2_button->Visible = true;
-			CH3_E3_button->Visible = true;
-			CH3_E4_button->Visible = true;
-			CH4_E1_button->Visible = true;
-			CH4_E2_button->Visible = false;
-			CH4_E3_button->Visible = false;
-			CH4_E4_button->Visible = false;
+			CH3_E2_button->Visible = false;
+			CH3_E3_button->Visible = false;
+			CH3_E4_button->Visible = false;
 			CH5_E1_button->Visible = false;
 			CH5_E2_button->Visible = false;
 			CH5_E3_button->Visible = false;
@@ -1064,10 +915,6 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 			CH3_E2_button->Visible = true;
 			CH3_E3_button->Visible = true;
 			CH3_E4_button->Visible = true;
-			CH4_E1_button->Visible = true;
-			CH4_E2_button->Visible = false;
-			CH4_E3_button->Visible = false;
-			CH4_E4_button->Visible = false;
 			CH5_E1_button->Visible = false;
 			CH5_E2_button->Visible = false;
 			CH5_E3_button->Visible = true;
@@ -1090,10 +937,6 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 			CH3_E2_button->Visible = false;
 			CH3_E3_button->Visible = false;
 			CH3_E4_button->Visible = true;
-			CH4_E1_button->Visible = false;
-			CH4_E2_button->Visible = true;
-			CH4_E3_button->Visible = false;
-			CH4_E4_button->Visible = false;
 			CH5_E1_button->Visible = false;
 			CH5_E2_button->Visible = false;
 			CH5_E3_button->Visible = false;
@@ -1116,10 +959,6 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 			CH3_E2_button->Visible = false;
 			CH3_E3_button->Visible = false;
 			CH3_E4_button->Visible = false;
-			CH4_E1_button->Visible = false;
-			CH4_E2_button->Visible = false;
-			CH4_E3_button->Visible = false;
-			CH4_E4_button->Visible = false;
 			CH5_E1_button->Visible = false;
 			CH5_E2_button->Visible = true;
 			CH5_E3_button->Visible = false;
@@ -1142,10 +981,6 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 			CH3_E2_button->Visible = false;
 			CH3_E3_button->Visible = false;
 			CH3_E4_button->Visible = false;
-			CH4_E1_button->Visible = false;
-			CH4_E2_button->Visible = false;
-			CH4_E3_button->Visible = false;
-			CH4_E4_button->Visible = false;
 			CH5_E1_button->Visible = false;
 			CH5_E2_button->Visible = false;
 			CH5_E3_button->Visible = false;
@@ -1168,10 +1003,6 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 			CH3_E2_button->Visible = false;
 			CH3_E3_button->Visible = false;
 			CH3_E4_button->Visible = false;
-			CH4_E1_button->Visible = false;
-			CH4_E2_button->Visible = false;
-			CH4_E3_button->Visible = false;
-			CH4_E4_button->Visible = false;
 			CH5_E1_button->Visible = false;
 			CH5_E2_button->Visible = false;
 			CH5_E3_button->Visible = false;
@@ -1190,14 +1021,10 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 			CH2_E1_button->Visible = false;
 			CH2_E2_button->Visible = false;
 			CH2_E3_button->Visible = false;
-			CH3_E1_button->Visible = false;
-			CH3_E2_button->Visible = false;
+			CH3_E1_button->Visible = 1;
+			CH3_E2_button->Visible = 1;
 			CH3_E3_button->Visible = false;
 			CH3_E4_button->Visible = false;
-			CH4_E1_button->Visible = false;
-			CH4_E2_button->Visible = false;
-			CH4_E3_button->Visible = false;
-			CH4_E4_button->Visible = true;
 			CH5_E1_button->Visible = false;
 			CH5_E2_button->Visible = false;
 			CH5_E3_button->Visible = false;
@@ -1220,10 +1047,6 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 			CH3_E2_button->Visible = true;
 			CH3_E3_button->Visible = false;
 			CH3_E4_button->Visible = false;
-			CH4_E1_button->Visible = false;
-			CH4_E2_button->Visible = false;
-			CH4_E3_button->Visible = true;
-			CH4_E4_button->Visible = false;
 			CH5_E1_button->Visible = false;
 			CH5_E2_button->Visible = false;
 			CH5_E3_button->Visible = false;
@@ -1246,10 +1069,6 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 			CH3_E2_button->Visible = true;
 			CH3_E3_button->Visible = true;
 			CH3_E4_button->Visible = true;
-			CH4_E1_button->Visible = false;
-			CH4_E2_button->Visible = false;
-			CH4_E3_button->Visible = false;
-			CH4_E4_button->Visible = false;
 			CH5_E1_button->Visible = false;
 			CH5_E2_button->Visible = false;
 			CH5_E3_button->Visible = false;
@@ -1272,10 +1091,6 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 			CH3_E2_button->Visible = false;
 			CH3_E3_button->Visible = true;
 			CH3_E4_button->Visible = false;
-			CH4_E1_button->Visible = false;
-			CH4_E2_button->Visible = false;
-			CH4_E3_button->Visible = false;
-			CH4_E4_button->Visible = false;
 			CH5_E1_button->Visible = false;
 			CH5_E2_button->Visible = false;
 			CH5_E3_button->Visible = false;
@@ -1298,10 +1113,6 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 			CH3_E2_button->Visible = false;
 			CH3_E3_button->Visible = false;
 			CH3_E4_button->Visible = true;
-			CH4_E1_button->Visible = false;
-			CH4_E2_button->Visible = false;
-			CH4_E3_button->Visible = false;
-			CH4_E4_button->Visible = false;
 			CH5_E1_button->Visible = false;
 			CH5_E2_button->Visible = false;
 			CH5_E3_button->Visible = false;
@@ -1310,58 +1121,6 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 			CH5_E6_button->Visible = false;
 			CH5_E7_button->Visible = false;
 		}
-		/*else if (comboBox1->SelectedItem == "w (Angular Velocity)") {
-			CH1_E1_button->Visible = false;
-			CH1_E2_button->Visible = false;
-			CH1_E3_button->Visible = false;
-			CH1_E4_button->Visible = false;
-			CH1_E5_button->Visible = false;
-			CH1_E6_button->Visible = false;
-			CH2_E1_button->Visible = false;
-			CH2_E2_button->Visible = false;
-			CH2_E3_button->Visible = false;
-			CH3_E1_button->Visible = false;
-			CH3_E2_button->Visible = false;
-			CH3_E3_button->Visible = false;
-			CH3_E4_button->Visible = false;
-			CH4_E1_button->Visible = true;
-			CH4_E2_button->Visible = true;
-			CH4_E3_button->Visible = true;
-			CH4_E4_button->Visible = false;
-			CH5_E1_button->Visible = false;
-			CH5_E2_button->Visible = false;
-			CH5_E3_button->Visible = false;
-			CH5_E4_button->Visible = false;
-			CH5_E5_button->Visible = false;
-			CH5_E6_button->Visible = false;
-			CH5_E7_button->Visible = false;
-		}*/
-		/*else if (comboBox1->SelectedItem == "L (Rope Lenght)") {
-			CH1_E1_button->Visible = false;
-			CH1_E2_button->Visible = false;
-			CH1_E3_button->Visible = false;
-			CH1_E4_button->Visible = false;
-			CH1_E5_button->Visible = false;
-			CH1_E6_button->Visible = false;
-			CH2_E1_button->Visible = false;
-			CH2_E2_button->Visible = false;
-			CH2_E3_button->Visible = false;
-			CH3_E1_button->Visible = false;
-			CH3_E2_button->Visible = false;
-			CH3_E3_button->Visible = false;
-			CH3_E4_button->Visible = false;
-			CH4_E1_button->Visible = false;
-			CH4_E2_button->Visible = false;
-			CH4_E3_button->Visible = true;
-			CH4_E4_button->Visible = true;
-			CH5_E1_button->Visible = false;
-			CH5_E2_button->Visible = false;
-			CH5_E3_button->Visible = false;
-			CH5_E4_button->Visible = false;
-			CH5_E5_button->Visible = false;
-			CH5_E6_button->Visible = false;
-			CH5_E7_button->Visible = false;
-		}*/
 		else if (comboBox1->SelectedItem == "W (Work)") {
 			CH1_E1_button->Visible = false;
 			CH1_E2_button->Visible = false;
@@ -1376,10 +1135,6 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 			CH3_E2_button->Visible = false;
 			CH3_E3_button->Visible = false;
 			CH3_E4_button->Visible = false;
-			CH4_E1_button->Visible = false;
-			CH4_E2_button->Visible = false;
-			CH4_E3_button->Visible = false;
-			CH4_E4_button->Visible = false;
 			CH5_E1_button->Visible = true;
 			CH5_E2_button->Visible = true;
 			CH5_E3_button->Visible = false;
@@ -1400,12 +1155,8 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 			CH2_E3_button->Visible = false;
 			CH3_E1_button->Visible = false;
 			CH3_E2_button->Visible = false;
-			CH3_E3_button->Visible = false;
+			CH3_E3_button->Visible = 1;
 			CH3_E4_button->Visible = false;
-			CH4_E1_button->Visible = false;
-			CH4_E2_button->Visible = false;
-			CH4_E3_button->Visible = false;
-			CH4_E4_button->Visible = false;
 			CH5_E1_button->Visible = true;
 			CH5_E2_button->Visible = false;
 			CH5_E3_button->Visible = true;
@@ -1428,10 +1179,6 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 			CH3_E2_button->Visible = false;
 			CH3_E3_button->Visible = false;
 			CH3_E4_button->Visible = false;
-			CH4_E1_button->Visible = false;
-			CH4_E2_button->Visible = false;
-			CH4_E3_button->Visible = false;
-			CH4_E4_button->Visible = false;
 			CH5_E1_button->Visible = false;
 			CH5_E2_button->Visible = true;
 			CH5_E3_button->Visible = true;
@@ -1454,10 +1201,6 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 			CH3_E2_button->Visible = false;
 			CH3_E3_button->Visible = false;
 			CH3_E4_button->Visible = false;
-			CH4_E1_button->Visible = false;
-			CH4_E2_button->Visible = false;
-			CH4_E3_button->Visible = false;
-			CH4_E4_button->Visible = false;
 			CH5_E1_button->Visible = false;
 			CH5_E2_button->Visible = false;
 			CH5_E3_button->Visible = false;
@@ -1480,10 +1223,6 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 			CH3_E2_button->Visible = false;
 			CH3_E3_button->Visible = false;
 			CH3_E4_button->Visible = false;
-			CH4_E1_button->Visible = false;
-			CH4_E2_button->Visible = false;
-			CH4_E3_button->Visible = false;
-			CH4_E4_button->Visible = false;
 			CH5_E1_button->Visible = false;
 			CH5_E2_button->Visible = false;
 			CH5_E3_button->Visible = false;
@@ -1506,10 +1245,6 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 			CH3_E2_button->Visible = false;
 			CH3_E3_button->Visible = false;
 			CH3_E4_button->Visible = false;
-			CH4_E1_button->Visible = false;
-			CH4_E2_button->Visible = false;
-			CH4_E3_button->Visible = false;
-			CH4_E4_button->Visible = false;
 			CH5_E1_button->Visible = false;
 			CH5_E2_button->Visible = false;
 			CH5_E3_button->Visible = false;
@@ -1532,10 +1267,6 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 			CH3_E2_button->Visible = false;
 			CH3_E3_button->Visible = false;
 			CH3_E4_button->Visible = false;
-			CH4_E1_button->Visible = false;
-			CH4_E2_button->Visible = false;
-			CH4_E3_button->Visible = false;
-			CH4_E4_button->Visible = false;
 			CH5_E1_button->Visible = false;
 			CH5_E2_button->Visible = false;
 			CH5_E3_button->Visible = false;
@@ -1670,58 +1401,6 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 			CH3_E4_button->Visible = true;
 		}
 	}
-	//set topic4
-	/*if (selected_topic == 4) {
-		if (comboBox1->SelectedItem == "(Default)") {
-			CH3_E1_button->Visible = true;
-			CH4_E1_button->Visible = true;
-			CH4_E2_button->Visible = true;
-			CH4_E3_button->Visible = true;
-			CH4_E4_button->Visible = true;
-		}
-		else if (comboBox1->SelectedItem == "v (Velocity)") {
-			CH3_E1_button->Visible = false;
-			CH4_E1_button->Visible = true;
-			CH4_E2_button->Visible = false;
-			CH4_E3_button->Visible = false;
-			CH4_E4_button->Visible = false;
-		}
-		else if (comboBox1->SelectedItem == "a (Acceleration)") {
-			CH3_E1_button->Visible = false;
-			CH4_E1_button->Visible = false;
-			CH4_E2_button->Visible = true;
-			CH4_E3_button->Visible = false;
-			CH4_E4_button->Visible = false;
-		}
-		else if (comboBox1->SelectedItem == "f (Frequency)") {
-			CH3_E1_button->Visible = true;
-			CH4_E1_button->Visible = false;
-			CH4_E2_button->Visible = false;
-			CH4_E3_button->Visible = false;
-			CH4_E4_button->Visible = true;
-		}
-		else if (comboBox1->SelectedItem == "T (Period)") {
-			CH3_E1_button->Visible = true;
-			CH4_E1_button->Visible = false;
-			CH4_E2_button->Visible = false;
-			CH4_E3_button->Visible = true;
-			CH4_E4_button->Visible = false;
-		}
-		else if (comboBox1->SelectedItem == "w (Angular Velocity)") {
-			CH3_E1_button->Visible = false;
-			CH4_E1_button->Visible = true;
-			CH4_E2_button->Visible = true;
-			CH4_E3_button->Visible = false;
-			CH4_E4_button->Visible = false;
-		}
-		else if (comboBox1->SelectedItem == "L (Rope Lenght)") {
-			CH3_E1_button->Visible = false;
-			CH4_E1_button->Visible = false;
-			CH4_E2_button->Visible = false;
-			CH4_E3_button->Visible = true;
-			CH4_E4_button->Visible = true;
-		}
-	}*/
 	//set topic5
 	if (selected_topic == 5) {
 		if (comboBox1->SelectedItem == "(Default)") {

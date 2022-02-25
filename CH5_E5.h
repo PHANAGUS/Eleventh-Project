@@ -64,6 +64,7 @@ namespace PhysicsCalculator {
 
 
 	private: System::Windows::Forms::Label^ g_u_label;
+	private: System::Windows::Forms::PictureBox^ pictureBox1;
 
 	private:
 		/// <summary>
@@ -102,6 +103,8 @@ namespace PhysicsCalculator {
 			this->h_textBox = (gcnew System::Windows::Forms::TextBox());
 			this->h_comboBox = (gcnew System::Windows::Forms::ComboBox());
 			this->g_u_label = (gcnew System::Windows::Forms::Label());
+			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// E_textBox
@@ -411,6 +414,16 @@ namespace PhysicsCalculator {
 			this->g_u_label->Text = L"m/s^2";
 			this->g_u_label->TextAlign = System::Drawing::ContentAlignment::MiddleRight;
 			// 
+			// pictureBox1
+			// 
+			this->pictureBox1->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
+			this->pictureBox1->Location = System::Drawing::Point(170, 77);
+			this->pictureBox1->Name = L"pictureBox1";
+			this->pictureBox1->Size = System::Drawing::Size(468, 76);
+			this->pictureBox1->TabIndex = 211;
+			this->pictureBox1->TabStop = false;
+			// 
 			// CH5_E5
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -418,6 +431,7 @@ namespace PhysicsCalculator {
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(804, 636);
+			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->E_textBox);
 			this->Controls->Add(this->E_label);
 			this->Controls->Add(this->convert_button);
@@ -447,6 +461,7 @@ namespace PhysicsCalculator {
 			this->Name = L"CH5_E5";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterParent;
 			this->Text = L"CH5_E5";
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
